@@ -2,6 +2,8 @@ import java.util.Stack;
 
 public class StringReversalAndPalindrome {
     public static void main(String[] args){
+        String str1= "hello";
+        System.out.println(reverseString(str1));
 
 
 
