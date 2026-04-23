@@ -20,8 +20,19 @@ public class BrowserHistorySimulator {
         BrowserHistory.push("wikipedia.org");
         System.out.println(BrowserHistory);
 
-        System.out.println( BrowserHistory.pop());
-        System.out.println( BrowserHistory.pop());
+        BrowserHistory.pop();
+        System.out.println("Current page: " + BrowserHistory.peek());
+
+        BrowserHistory.pop();
+        System.out.println("Current page: " + BrowserHistory.peek());
+
+        System.out.println("Is history empty? " + BrowserHistory.isEmpty());
+
+        BrowserHistory.push("twitter.com");
+        BrowserHistory.push("linkedin.com");
+
+
+
 
 
 
