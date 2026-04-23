@@ -28,6 +28,8 @@ public class ParenthesesValidator {
 
                 if (isMatchingPair(top, ch)) {
                     openingSymbolsStack.pop();
+                }else {
+                    return false;
                 }
 
 
