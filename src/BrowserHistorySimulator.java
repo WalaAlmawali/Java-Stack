@@ -20,6 +20,11 @@ public class BrowserHistorySimulator {
         BrowserHistory.push("wikipedia.org");
         System.out.println(BrowserHistory);
 
+        System.out.println( BrowserHistory.pop());
+        System.out.println( BrowserHistory.pop());
+
+
+
     }
 
 
