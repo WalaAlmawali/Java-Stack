@@ -11,6 +11,8 @@ public class StringReversalAndPalindrome {
         if (str.equals("")) {
             return "null";
         }
+        Stack<Character> stack = new Stack<>();
+
 
 
     }
