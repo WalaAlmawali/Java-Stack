@@ -7,6 +7,8 @@ public class ParenthesesValidator {
     }
 
     public static boolean isBalanced(String expression) {
+        Stack<Character> openingSymbolsStack = new Stack<>();
+
 
 
     }
