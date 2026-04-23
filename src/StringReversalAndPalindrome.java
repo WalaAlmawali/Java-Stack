@@ -20,6 +20,7 @@ public class StringReversalAndPalindrome {
             reversedStr+= stack.pop();
         }
 
+        return reversedStr;
     }
 
     }
