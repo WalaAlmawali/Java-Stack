@@ -8,6 +8,9 @@ public class StringReversalAndPalindrome {
     }
     public static String reverseString(String str) {
 
+        if (str.equals("")) {
+            return "null";
+        }
 
 
     }
