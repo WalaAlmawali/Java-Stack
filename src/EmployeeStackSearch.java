@@ -1,4 +1,5 @@
 import java.util.Stack;
+import java.util.Iterator;
 
 public class EmployeeStackSearch {
     public static void main(String[] args){
@@ -34,6 +35,11 @@ public class EmployeeStackSearch {
             System.out.println(employee);
         }
 
+
+        Iterator<String> iterator = employeeStack.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
     }
 
