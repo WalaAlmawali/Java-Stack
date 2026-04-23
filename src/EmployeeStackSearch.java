@@ -26,6 +26,10 @@ public class EmployeeStackSearch {
 
         System.out.println(employeeStack.contains("Employee Ali transferred to Finance"));
 
+        for (int i = employeeStack.size() - 1; i >= 0; i--) {
+            System.out.println(employeeStack.get(i));
+        }
+
 
     }
 
