@@ -14,9 +14,8 @@ public class StringReversalAndPalindrome {
         Stack<Character> stack = new Stack<>();
         for (char ch : str.toCharArray()) {
             stack.push(ch);
-
-
         }
+        String reversedStr = "";
 
     }
 
