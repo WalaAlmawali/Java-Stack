@@ -10,6 +10,9 @@ public class EmployeeStackDemo {
       stack.push("Employee Maria updated personal details");
       stack.push("Employee Ahmed completed training program");
 
+      System.out.println(stack);
+
+
 
    }
 }
