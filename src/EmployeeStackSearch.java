@@ -16,7 +16,8 @@ public class EmployeeStackSearch {
         int position = 1;
 
         for(int i = employeeStack.size() -1; i>= 0; i--){
-
+            System.out.println("Position " + position + ": " + employeeStack.get(i));
+            position++;
 
         }
 
