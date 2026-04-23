@@ -26,16 +26,17 @@ public class ParenthesesValidator {
                 }
                 char top = openingSymbolsStack.peek();
 
-            }
-
 
             }
 
+            }
 
+    }
 
-
-        return true;
-
+    public static boolean isMatchingPair(char open, char close) {
+        return (open == '(' && close == ')') ||
+                (open == '[' && close == ']') ||
+                (open == '{' && close == '}');
     }
 
     }
