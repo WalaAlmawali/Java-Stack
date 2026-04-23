@@ -19,10 +19,10 @@ public class ParenthesesValidator {
 
             if (ch == '(' || ch == '[' || ch == '{') {
                 openingSymbolsStack.push(ch);
+            }  else if (ch == ')' || ch == ']' || ch == '}') {
+
+
             }
-
-
-        }
 
 
 
