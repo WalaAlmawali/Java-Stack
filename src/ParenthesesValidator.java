@@ -9,7 +9,16 @@ public class ParenthesesValidator {
     public static boolean isBalanced(String expression) {
         Stack<Character> openingSymbolsStack = new Stack<>();
 
+        if (expression.isEmpty()) {
+            System.out.println("Empty expression");
+            return true;
+        }
 
+
+
+
+
+        return true;
 
     }
 
