@@ -12,8 +12,11 @@ public class StringReversalAndPalindrome {
             return "null";
         }
         Stack<Character> stack = new Stack<>();
+        for (char ch : str.toCharArray()) {
+            stack.push(ch);
 
 
+        }
 
     }
 
