@@ -3,6 +3,14 @@ import java.util.Stack;
 public class ParenthesesValidator {
     public static void main(String[] args){
 
+        String test1 =    "";
+        System.out.println(isBalanced(test1));
+
+        String test2 =    "(a+b)";
+        System.out.println(isBalanced(test2));
+
+        String test3 =    "{[a+b]*(c+d)}";
+        System.out.println(isBalanced(test3));
 
     }
 
