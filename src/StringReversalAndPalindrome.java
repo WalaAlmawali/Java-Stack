@@ -6,5 +6,10 @@ public class StringReversalAndPalindrome {
 
 
     }
+    public static String reverseString(String str) {
+
+
+
+    }
 
     }
