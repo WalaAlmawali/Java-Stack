@@ -21,6 +21,11 @@ public class ParenthesesValidator {
                 openingSymbolsStack.push(ch);
             }  else if (ch == ')' || ch == ']' || ch == '}') {
 
+                if (openingSymbolsStack.isEmpty()) {
+                    return false;
+                }
+            }
+
 
             }
 
