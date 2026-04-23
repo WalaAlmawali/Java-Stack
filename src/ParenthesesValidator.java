@@ -16,6 +16,12 @@ public class ParenthesesValidator {
 
         for (int i = 0; i < expression.length(); i++) {
             char ch = expression.charAt(i);
+
+            if (ch == '(' || ch == '[' || ch == '{') {
+                openingSymbolsStack.push(ch);
+            }
+
+
         }
 
 
