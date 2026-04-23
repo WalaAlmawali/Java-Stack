@@ -41,6 +41,11 @@ public class EmployeeStackSearch {
             System.out.println(iterator.next());
         }
 
+        for (int i = 0; i < employeeStack.size(); i++) {
+            System.out.println("Index " + i + ": " + employeeStack.get(i));
+        }
+
+
     }
 
     }
