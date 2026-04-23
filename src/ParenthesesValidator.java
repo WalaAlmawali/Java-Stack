@@ -14,6 +14,10 @@ public class ParenthesesValidator {
             return true;
         }
 
+        for (int i = 0; i < expression.length(); i++) {
+
+
+        }
 
 
 
