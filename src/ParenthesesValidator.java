@@ -32,10 +32,14 @@ public class ParenthesesValidator {
                     return false;
                 }
 
-
             }
 
             }
+        if (openingSymbolsStack.isEmpty()) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
 
