@@ -24,8 +24,7 @@ public class EmployeeStackSearch {
         System.out.println(employeeStack.search("Employee Sara promoted to Manager"));
         System.out.println(employeeStack.search("Employee Maria updated profile"));
 
-
-
+        System.out.println(employeeStack.contains("Employee Ali transferred to Finance"));
 
 
     }
