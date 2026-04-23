@@ -6,4 +6,9 @@ public class ParenthesesValidator {
 
     }
 
+    public static boolean isBalanced(String expression) {
+
+
+    }
+
     }
