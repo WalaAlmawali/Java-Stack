@@ -14,6 +14,8 @@ public class EmployeeStackDemo {
 
       stack.push("Employee Mohammed completed training program");
 
+      System.out.println("Updated stack:" + stack);
+
 
    }
 }
