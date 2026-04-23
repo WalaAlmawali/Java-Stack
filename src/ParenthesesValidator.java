@@ -24,6 +24,8 @@ public class ParenthesesValidator {
                 if (openingSymbolsStack.isEmpty()) {
                     return false;
                 }
+                char top = openingSymbolsStack.peek();
+
             }
 
 
