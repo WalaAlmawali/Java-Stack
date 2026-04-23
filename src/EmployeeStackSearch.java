@@ -30,6 +30,10 @@ public class EmployeeStackSearch {
             System.out.println(employeeStack.get(i));
         }
 
+        for (String employee : employeeStack) {
+            System.out.println(employee);
+        }
+
 
     }
 
