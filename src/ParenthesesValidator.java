@@ -26,6 +26,10 @@ public class ParenthesesValidator {
                 }
                 char top = openingSymbolsStack.peek();
 
+                if (isMatchingPair(top, ch)) {
+                    openingSymbolsStack.pop();
+                }
+
 
             }
 
