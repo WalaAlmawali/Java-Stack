@@ -12,6 +12,15 @@ public class EmployeeStackSearch {
         employeeStack.push("Employee Ahmed completed training");
         employeeStack.push("Employee Fatima resigned");
 
+        System.out.println("Stack elements with positions from TOP:");
+        int position = 1;
+
+        for(int i = employeeStack.size() -1; i>= 0; i--){
+
+
+        }
+
+
 
 
     }
