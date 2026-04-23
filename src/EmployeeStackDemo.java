@@ -12,6 +12,7 @@ public class EmployeeStackDemo {
 
       System.out.println(stack);
 
+      stack.push("Employee Mohammed completed training program");
 
 
    }
