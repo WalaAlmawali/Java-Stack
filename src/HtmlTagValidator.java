@@ -43,8 +43,10 @@ public class HtmlTagValidator {
                         return false;
                     }
                     String top = openingTagsStack.pop();
-
-
+                    if (!top.equals(tagName)) {
+                        System.out.println("Error: Mismatch → expected </" + top + "> but found </" + tagName + ">");
+                        return false;
+                    }
 
 
                 }
