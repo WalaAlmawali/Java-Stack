@@ -59,6 +59,10 @@ public class DecimalToBinaryConverter {
             binary+= remainders.pop();
         }
 
+    }
+
+    public static int binaryToDecimal(String binary) {
+
 
 
     }
