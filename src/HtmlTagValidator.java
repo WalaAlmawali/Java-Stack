@@ -36,6 +36,8 @@ public class HtmlTagValidator {
                 }
                 // Closing tag
                 else if (tag.startsWith("/")) {
+                    String tagName = tag.substring(1).trim();
+
 
 
                 }
