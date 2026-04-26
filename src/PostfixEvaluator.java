@@ -26,7 +26,11 @@ public class PostfixEvaluator {
                 if (stack.size() < 2) {
                   System.out.println("Not enough operands for operator: " + element);
                 }
-                
+
+                int b = stack.pop(); // pop()
+                int a = stack.pop(); // pop()
+
+
             }
 
 
