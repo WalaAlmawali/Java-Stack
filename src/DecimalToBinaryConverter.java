@@ -8,11 +8,13 @@ public class DecimalToBinaryConverter {
 
     public static String decimalToBinaryConverter(int decimalNumber){
 
-        Stack<Character> remainders = new Stack<>();
+        Stack<Integer> remainders = new Stack<>();
         int number = decimalNumber;
 
         while(number > 0){
             int remainder = number % 2;
+            remainders.push(remainder);
+
         }
 
 
