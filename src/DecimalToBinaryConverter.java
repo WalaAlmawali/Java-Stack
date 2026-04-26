@@ -29,4 +29,8 @@ public class DecimalToBinaryConverter {
         return binary;
     }
 
+    public static void displayConversionProcess(int decimal){
+
+    }
+
     }
