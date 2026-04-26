@@ -35,6 +35,8 @@ public class StringReversalAndPalindrome {
             return false;
         }
 
+        String cleanedString = str.replaceAll("\\s+","").toLowerCase();
+
     }
 
 }
