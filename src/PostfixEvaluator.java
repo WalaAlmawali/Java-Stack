@@ -32,6 +32,8 @@ public class PostfixEvaluator {
 
                 int result = applyOperator(a, b, element);
 
+                stack.push(result); // push result
+
 
             }
 
