@@ -69,6 +69,10 @@ public class DecimalToBinaryConverter {
 
         int decimal = 0;
         int power = 0 ;
+        for(int i = binary.length()-1; i>= 0; i--){
+
+
+        }
 
     }
 
