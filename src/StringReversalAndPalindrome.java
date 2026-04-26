@@ -6,18 +6,23 @@ public class StringReversalAndPalindrome {
         System.out.println(reverseString(str1));
 
 
-
     }
     public static String reverseString(String str) {
 
-        if (str.equals("")) {
+        if (str.isEmpty()) {
+            return "";
+        }
+
+        if(str == null){
             return "null";
         }
+
         Stack<Character> stack = new Stack<>();
         for (char ch : str.toCharArray()) {
             stack.push(ch);
         }
         String reversedStr = "";
+
         while (!stack.isEmpty()){
             reversedStr+= stack.pop();
         }
@@ -25,4 +30,11 @@ public class StringReversalAndPalindrome {
         return reversedStr;
     }
 
+    public static boolean isPalindrome(String str){
+        if (str == null) {
+            return false;
+        }
+
     }
+
+}
