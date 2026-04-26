@@ -61,6 +61,9 @@ public class StringReversalAndPalindrome {
             return false;
         }
 
+        String cleanedString = str.replaceAll("[^a-zA-z0-9]","").toLowerCase();
+
+
 
     }
 
