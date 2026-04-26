@@ -38,6 +38,9 @@ public class DecimalToBinaryConverter {
 
     public static void displayConversionProcess(int decimal){
 
+        if(decimal <= 0){
+            System.out.println("No steps, Number is zero or negative");
+        }
 
     }
 
