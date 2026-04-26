@@ -25,5 +25,13 @@ public class TowerOfHanoiSolver {
         for (int i = numDisks; i >= 1; i--) {
             pegA.push(i);
         }
+    }
+
+    // Move disk between pegs
+    public static void moveDisk(char fromPeg, char toPeg) {
+
+
+
+    }
 
 }
