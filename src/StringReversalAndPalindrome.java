@@ -43,6 +43,12 @@ public class StringReversalAndPalindrome {
             stack.push(ch);
         }
 
+        for (char ch : cleanedString.toCharArray()) {
+           if(ch!= stack.pop()){
+               return false;
+           }
+        }
+
 
     }
 
