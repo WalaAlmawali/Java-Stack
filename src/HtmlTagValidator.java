@@ -27,6 +27,10 @@ public class HtmlTagValidator {
                     System.out.println("Error: Tag not closed properly.");
                     return false;
                 }
+                // Extract full tag
+                String tag = html.substring(i + 1, closeIndex).trim();
+
+
             }
 
 
