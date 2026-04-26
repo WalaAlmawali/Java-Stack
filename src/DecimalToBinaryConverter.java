@@ -63,7 +63,9 @@ public class DecimalToBinaryConverter {
 
     public static int binaryToDecimal(String binary) {
 
-
+        if(binary == null || binary.isEmpty()){
+            return 0;
+        }
 
     }
 
