@@ -60,6 +60,8 @@ public class HtmlTagValidator {
                 }
                 // Show stack after each step
                 System.out.println("Stack: " + openingTagsStack);
+                // Move index
+                i = closeIndex;
 
 
             }
