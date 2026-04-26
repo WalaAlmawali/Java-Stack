@@ -39,6 +39,10 @@ public class StringReversalAndPalindrome {
 
         Stack<Character> stack = new Stack<>();
 
+        for (char ch : cleanedString.toCharArray()) {
+            stack.push(ch);
+        }
+
 
     }
 
