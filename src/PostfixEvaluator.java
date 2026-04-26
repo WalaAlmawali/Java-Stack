@@ -41,7 +41,13 @@ public class PostfixEvaluator {
 
 
         }
+        // Final result check
+        int finalResult = stack.pop();
 
+        // Clear stack after evaluation
+        stack.clear(); // clear()
+
+        return finalResult;
 
         }
 
