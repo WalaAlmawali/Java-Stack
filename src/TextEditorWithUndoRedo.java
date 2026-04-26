@@ -59,6 +59,11 @@ public class TextEditorWithUndoRedo {
 
     public void redo() {
 
+        if (redoStack.isEmpty()) {
+            System.out.println("Nothing to redo.");
+            return;
+        }
+
 
     }
 
