@@ -13,5 +13,9 @@ public class TextEditorWithUndoRedo {
     // Stack for redo operations
     private Stack<String> redoStack = new Stack<>();
 
+    // Store current text as a simple String
+    private String currentText = "";
 
-    }
+
+
+}
