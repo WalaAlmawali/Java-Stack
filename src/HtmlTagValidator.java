@@ -8,6 +8,9 @@ public class HtmlTagValidator {
     }
     public static boolean validateHtmlTags(String html) {
 
+        // Stack to store opening tags
+        Stack<String> openingTagsStack = new Stack<>();
+
 
     }
 
