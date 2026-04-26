@@ -64,6 +64,9 @@ public class TextEditorWithUndoRedo {
             return;
         }
 
+        // Save current state to undo stack
+        saveToUndoStack();
+
 
     }
 
