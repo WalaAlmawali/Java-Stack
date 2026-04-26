@@ -67,6 +67,9 @@ public class DecimalToBinaryConverter {
             return 0;
         }
 
+        int decimal = 0;
+        int power = 0 ;
+
     }
 
     }
