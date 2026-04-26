@@ -68,8 +68,10 @@ public class HtmlTagValidator {
 
             i++;
             }
-
-
+        if (!openingTagsStack.isEmpty()) {
+            System.out.println("Error: Unclosed tags remain → " + openingTagsStack);
+            return false;
+        }
 
     }
 
