@@ -14,6 +14,7 @@ public class DecimalToBinaryConverter {
         while(number > 0){
             int remainder = number % 2;
             remainders.push(remainder);
+            number = number/2;
 
         }
 
