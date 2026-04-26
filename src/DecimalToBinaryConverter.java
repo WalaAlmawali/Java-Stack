@@ -45,6 +45,14 @@ public class DecimalToBinaryConverter {
         Stack<Integer> remainders = new Stack<>();
         int number = decimal;
 
+        while(number > 0){
+            int remainder = number % 2;
+            remainders.push(remainder);
+            number = number/2;
+
+        }
+
+
 
 
 
