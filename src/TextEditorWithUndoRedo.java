@@ -4,6 +4,12 @@ public class TextEditorWithUndoRedo {
     public static void main(String[] args){
 
 
+        TextEditorWithUndoRedo editor = new TextEditorWithUndoRedo();
+
+        editor.type("Hello");
+        editor.type(" World");
+        editor.type("!");
+        editor.undo();
 
     }
 
