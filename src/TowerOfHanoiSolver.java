@@ -68,5 +68,15 @@ public class TowerOfHanoiSolver {
 
     }
 
+    // Recursive solution
+    public static void solveHanoi(int n, char from, char to, char aux) {
+
+        if (n == 1) {
+            moveDisk(from, to);
+            return;
+        }
+
+    }
+
 
 }
