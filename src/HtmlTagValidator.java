@@ -20,7 +20,7 @@ public class HtmlTagValidator {
 
         while (i < html.length()) {
             if (html.charAt(i) == '<') {
-
+                int closeIndex = html.indexOf('>', i);
 
 
             }
