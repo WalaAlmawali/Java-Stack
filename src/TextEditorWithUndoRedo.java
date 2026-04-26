@@ -28,6 +28,9 @@ public class TextEditorWithUndoRedo {
         // Concatenate new text
         currentText = currentText + text;
 
+        // Clear redo stack after new action
+        redoStack.clear();
+
 
 
     }
