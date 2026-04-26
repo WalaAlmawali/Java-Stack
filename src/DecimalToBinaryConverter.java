@@ -9,6 +9,13 @@ public class DecimalToBinaryConverter {
     }
 
     public static String decimalToBinaryConverter(int decimalNumber){
+        if(decimalNumber == 0 ){
+            return "";
+        }
+
+        if(decimalNumber < 0){
+            return "Unsupported";
+        }
 
         Stack<Integer> remainders = new Stack<>();
         int number = decimalNumber;
@@ -30,6 +37,7 @@ public class DecimalToBinaryConverter {
     }
 
     public static void displayConversionProcess(int decimal){
+
 
     }
 
