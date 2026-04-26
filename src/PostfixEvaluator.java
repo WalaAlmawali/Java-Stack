@@ -33,6 +33,13 @@ public class PostfixEvaluator {
         return token.matches("-?\\d+"); // supports negative numbers
     }
 
+    // Helper method to check if token is an operator
+    private static boolean isOperator(String token) {
+        return token.equals("+") || token.equals("-") ||
+                token.equals("*") || token.equals("/") ||
+                token.equals("%");
+    }
+
 
 }
 
