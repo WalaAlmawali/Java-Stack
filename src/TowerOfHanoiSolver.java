@@ -26,6 +26,13 @@ public class TowerOfHanoiSolver {
             pegA.push(i);
         }
     }
+    // Get peg reference based on name
+    public static Stack<Integer> getPeg(char peg) {
+        if (peg == 'A') return pegA;
+        if (peg == 'B') return pegB;
+        return pegC;
+    }
+
 
     // Move disk between pegs
     public static void moveDisk(char fromPeg, char toPeg) {
@@ -33,5 +40,6 @@ public class TowerOfHanoiSolver {
 
 
     }
+
 
 }
