@@ -35,6 +35,8 @@ public class PostfixEvaluator {
                 stack.push(result); // push result
 
 
+            }else {
+                System.out.println("Invalid token: " + element);
             }
 
 
