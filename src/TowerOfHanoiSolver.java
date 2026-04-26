@@ -11,4 +11,8 @@ public class TowerOfHanoiSolver {
     static Stack<Integer> pegB = new Stack<>();
     static Stack<Integer> pegC = new Stack<>();
 
-    }
+    // Counter for moves
+    static int moveCount = 0;
+
+
+}
