@@ -20,10 +20,13 @@ public class PostfixEvaluator {
             if (isNumber(element)) {
                 int num = Integer.parseInt(element);
                 stack.push(num);  // push()
+
+            } else if (isOperator(element)) {
+                
             }
 
 
-            }
+        }
 
 
         }
