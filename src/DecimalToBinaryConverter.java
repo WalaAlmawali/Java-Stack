@@ -3,6 +3,8 @@ import java.util.Stack;
 public class DecimalToBinaryConverter {
     public static void main(String[] args){
 
+        System.out.println(decimalToBinaryConverter(10));
+
 
     }
 
@@ -18,7 +20,13 @@ public class DecimalToBinaryConverter {
 
         }
 
+        String binary = "";
 
+        while (!remainders.isEmpty()){
+            binary+= remainders.pop();
+        }
+
+        return binary;
     }
 
     }
