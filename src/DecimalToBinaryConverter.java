@@ -11,6 +11,10 @@ public class DecimalToBinaryConverter {
         Stack<Character> remainders = new Stack<>();
         int number = decimalNumber;
 
+        while(number > 0){
+            int remainder = number % 2;
+        }
+
 
     }
 
