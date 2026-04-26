@@ -16,6 +16,11 @@ public class PostfixEvaluator {
         String[] expressionElements = expression.split("");
 
         for(String element:expressionElements ){
+            // check If element is a number
+            if (isNumber(element)) {
+                int num = Integer.parseInt(element);
+                stack.push(num);  // push()
+            }
 
 
             }
