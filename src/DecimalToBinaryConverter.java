@@ -43,6 +43,8 @@ public class DecimalToBinaryConverter {
         }
 
         Stack<Integer> remainders = new Stack<>();
+        int number = decimal;
+
 
 
 
