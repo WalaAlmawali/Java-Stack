@@ -40,6 +40,11 @@ public class TextEditorWithUndoRedo {
     // Method to undo last action
     public void undo() {
 
+        if (undoStack.isEmpty()) {
+            System.out.println("Nothing to undo.");
+            return;
+        }
+
 
     }
 
