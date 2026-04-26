@@ -18,6 +18,10 @@ public class HtmlTagValidator {
 
         int i = 0;
 
+        while (i < html.length()) {
+
+
+        }
 
 
 
