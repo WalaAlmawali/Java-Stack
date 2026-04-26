@@ -76,6 +76,10 @@ public class TowerOfHanoiSolver {
             return;
         }
 
+        // Move n-1 disks to auxiliary peg
+        solveHanoi(n - 1, from, aux, to);
+
+
     }
 
 
