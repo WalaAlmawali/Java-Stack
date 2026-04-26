@@ -11,6 +11,9 @@ public class PostfixEvaluator {
             System.out.println("Empty expression");
         }
 
+        Stack<Integer> stack = new Stack<>();
+
+
     }
 
     }
