@@ -22,8 +22,13 @@ public class HtmlTagValidator {
             if (html.charAt(i) == '<') {
                 int closeIndex = html.indexOf('>', i);
 
-
+                // Invalid if no closing '>'
+                if (closeIndex == -1) {
+                    System.out.println("Error: Tag not closed properly.");
+                    return false;
+                }
             }
+
 
             }
 
