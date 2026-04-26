@@ -5,5 +5,8 @@ public class PostfixEvaluator {
 
 
     }
+    public static int evaluatePostfix(String expression){
+
+    }
 
     }
