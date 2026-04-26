@@ -22,6 +22,10 @@ public class PostfixEvaluator {
                 stack.push(num);  // push()
 
             } else if (isOperator(element)) {
+                // Check if enough operands exist
+                if (stack.size() < 2) {
+                  System.out.println("Not enough operands for operator: " + element);
+                }
                 
             }
 
