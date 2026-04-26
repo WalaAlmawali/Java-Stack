@@ -79,6 +79,9 @@ public class TowerOfHanoiSolver {
         // Move n-1 disks to auxiliary peg
         solveHanoi(n - 1, from, aux, to);
 
+        // Move largest disk
+        moveDisk(from, to);
+
 
     }
 
