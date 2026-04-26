@@ -50,9 +50,14 @@ public class DecimalToBinaryConverter {
             remainders.push(remainder);
             number = number/2;
 
+            System.out.println("reminder = "+ remainder+ ", stack = " +remainders + "number " + number + "Divide 2 = "+ number);
+
         }
+        String binary = "";
 
-
+        while (!remainders.isEmpty()){
+            binary+= remainders.pop();
+        }
 
 
 
