@@ -6,5 +6,10 @@ public class HtmlTagValidator {
 
 
     }
+    public static boolean validateHtmlTags(String html) {
+
+
+    }
+
 
     }
