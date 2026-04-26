@@ -42,6 +42,10 @@ public class DecimalToBinaryConverter {
             System.out.println("No steps, Number is zero or negative");
         }
 
+        Stack<Integer> remainders = new Stack<>();
+
+
+
     }
 
     }
