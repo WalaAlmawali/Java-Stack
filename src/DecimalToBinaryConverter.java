@@ -3,7 +3,9 @@ import java.util.Stack;
 public class DecimalToBinaryConverter {
     public static void main(String[] args){
 
-        System.out.println(decimalToBinaryConverter(10));
+        System.out.println("10 in binary : "+decimalToBinaryConverter(10));
+        System.out.println("1101 in decimal : "+binaryToDecimal("1101"));
+
 
 
     }
@@ -69,6 +71,7 @@ public class DecimalToBinaryConverter {
 
         int decimal = 0;
         int power = 0 ;
+
         for(int i = binary.length()-1; i>= 0; i--){
 
             char bit = binary.charAt(i);
