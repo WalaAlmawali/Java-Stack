@@ -3,8 +3,12 @@ import java.util.Stack;
 public class StringReversalAndPalindrome {
     public static void main(String[] args){
         String str1= "hello";
-        System.out.println(reverseString(str1));
-        System.out.println(isPalindrome(str1));
+        System.out.println("the original text : " + str1);
+        System.out.println("the  reversed string : "+reverseString(str1));
+        System.out.println("is it  palindrome ? "+isPalindrome(str1));
+        System.out.println("is it  palindrome ? "+isPalindromeAdvanced(str1));
+
+
 
 
 
