@@ -2,29 +2,29 @@ import java.util.Stack;
 
 public class PostfixEvaluator {
     public static void main(String[] args){
+        System.out.println(evaluatePostfix( "2 5 *"));
 
 
     }
     public static int evaluatePostfix(String expression){
 
         if(expression == null || expression.isEmpty()){
-            System.out.println("Empty expression");
+            throw new IllegalArgumentException("Empty expression");
         }
 
         Stack<Integer> stack = new Stack<>();
 
-        String[] expressionElements = expression.split("");
+        String[] expressionElements = expression.split("\\s+");
 
         for(String element:expressionElements ){
             // check If element is a number
             if (isNumber(element)) {
-                int num = Integer.parseInt(element);
-                stack.push(num);  // push()
+                stack.push(Integer.parseInt(element));  // push()
 
             } else if (isOperator(element)) {
                 // Check if enough operands exist
                 if (stack.size() < 2) {
-                  System.out.println("Not enough operands for operator: " + element);
+                    throw new IllegalArgumentException("Not enough operands for operator: " + element);
                 }
 
                 int b = stack.pop(); // pop()
@@ -33,21 +33,15 @@ public class PostfixEvaluator {
                 int result = applyOperator(a, b, element);
 
                 stack.push(result); // push result
-
-
-            }else {
-                System.out.println("Invalid token: " + element);
             }
 
-
         }
-        // Final result check
-        int finalResult = stack.pop();
 
-        // Clear stack after evaluation
-        stack.clear(); // clear()
+        if (stack.size() != 1) {
+            throw new IllegalArgumentException("Invalid postfix expression.");
+        }
 
-        return finalResult;
+        return stack.pop();
 
         }
 
