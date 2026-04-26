@@ -30,6 +30,11 @@ public class HtmlTagValidator {
                 // Extract full tag
                 String tag = html.substring(i + 1, closeIndex).trim();
 
+                // Check self-closing tag
+                if (tag.endsWith("/")) {
+                    System.out.println("Self-closing tag: <" + tag + ">");
+                }
+
 
             }
 
