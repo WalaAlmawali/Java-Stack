@@ -51,7 +51,9 @@ public class TextEditorWithUndoRedo {
         // Restore previous state
         currentText = undoStack.pop();
 
-
+        System.out.println("Current Text: \"" + currentText + "\"");
+        System.out.println("Undo Stack: " + undoStack);
+        System.out.println("Redo Stack: " + redoStack);
 
     }
 
