@@ -7,6 +7,10 @@ public class PostfixEvaluator {
     }
     public static int evaluatePostfix(String expression){
 
+        if(expression == null || expression.isEmpty()){
+            System.out.println("Empty expression");
+        }
+
     }
 
     }
