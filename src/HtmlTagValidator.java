@@ -38,6 +38,12 @@ public class HtmlTagValidator {
                 else if (tag.startsWith("/")) {
                     String tagName = tag.substring(1).trim();
 
+                    if (openingTagsStack.isEmpty()) {
+                        System.out.println("Error: Closing tag </" + tagName + "> found but stack is empty.");
+                        return false;
+                    }
+
+
 
 
                 }
