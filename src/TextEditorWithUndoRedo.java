@@ -7,5 +7,8 @@ public class TextEditorWithUndoRedo {
 
     }
 
+    // Stack for undo operations
+    private Stack<String> undoStack = new Stack<>();
+
 
     }
