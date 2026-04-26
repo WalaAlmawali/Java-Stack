@@ -48,6 +48,9 @@ public class TextEditorWithUndoRedo {
         // Save current state to redo stack
         redoStack.push(currentText);
 
+        // Restore previous state
+        currentText = undoStack.pop();
+
 
 
     }
