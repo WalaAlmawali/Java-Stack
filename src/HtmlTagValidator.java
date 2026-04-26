@@ -42,6 +42,7 @@ public class HtmlTagValidator {
                         System.out.println("Error: Closing tag </" + tagName + "> found but stack is empty.");
                         return false;
                     }
+                    String top = openingTagsStack.pop();
 
 
 
