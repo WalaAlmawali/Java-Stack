@@ -68,10 +68,12 @@ public class StringReversalAndPalindrome {
         for (char ch : cleanedString.toCharArray()) {
             stack.push(ch);
         }
-
-
-
-
+        for (char ch : cleanedString.toCharArray()) {
+            if(ch!= stack.pop()){
+                return false;
+            }
+        }
+        return true;
     }
 
 
