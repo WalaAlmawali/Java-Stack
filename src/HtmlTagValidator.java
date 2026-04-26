@@ -47,8 +47,16 @@ public class HtmlTagValidator {
                         System.out.println("Error: Mismatch → expected </" + top + "> but found </" + tagName + ">");
                         return false;
                     }
+                    System.out.println("Matched closing tag: </" + tagName + ">");
 
+                }
+                // Opening tag
+                else {
 
+                    // Remove attributes (take only tag name)
+                    String tagName = tag.split(" ")[0];
+                    openingTagsStack.push(tagName);
+                    System.out.println("Opening tag: <" + tagName + "> pushed to stack");
                 }
 
 
