@@ -75,6 +75,7 @@ public class DecimalToBinaryConverter {
             if(bit == '1'){
                 decimal+= Math.pow(2,power);
             }
+            power++;
 
 
         }
