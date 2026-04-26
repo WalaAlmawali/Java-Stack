@@ -79,6 +79,7 @@ public class DecimalToBinaryConverter {
 
 
         }
+        return decimal;
 
     }
 
