@@ -15,6 +15,10 @@ public class PostfixEvaluator {
 
         String[] expressionElements = expression.split("");
 
+        for(String element:expressionElements ){
+
+
+        }
 
     }
 
