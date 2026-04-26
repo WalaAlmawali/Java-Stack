@@ -45,6 +45,10 @@ public class TextEditorWithUndoRedo {
             return;
         }
 
+        // Save current state to redo stack
+        redoStack.push(currentText);
+
+
 
     }
 
