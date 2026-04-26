@@ -22,6 +22,13 @@ public class TextEditorWithUndoRedo {
     // Method to type/add text
     public void type(String text) {
 
+        // Save current state before change
+        saveToUndoStack();
+
+        // Concatenate new text
+        currentText = currentText + text;
+
+
 
     }
 
