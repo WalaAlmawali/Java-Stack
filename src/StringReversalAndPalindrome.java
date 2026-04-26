@@ -4,6 +4,9 @@ public class StringReversalAndPalindrome {
     public static void main(String[] args){
         String str1= "hello";
         System.out.println(reverseString(str1));
+        System.out.println(isPalindrome(str1));
+
+
 
 
     }
@@ -49,7 +52,14 @@ public class StringReversalAndPalindrome {
            }
         }
 
+        return true;
 
     }
+    public static boolean isPalindromeAdvanced(String str){
+
+
+
+    }
+
 
 }
