@@ -37,6 +37,9 @@ public class StringReversalAndPalindrome {
 
         String cleanedString = str.replaceAll("\\s+","").toLowerCase();
 
+        Stack<Character> stack = new Stack<>();
+
+
     }
 
 }
