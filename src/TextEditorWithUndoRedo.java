@@ -57,7 +57,13 @@ public class TextEditorWithUndoRedo {
 
     }
 
-    // Save state to undo stack with size limit
+    public void redo() {
+
+
+    }
+
+
+        // Save state to undo stack with size limit
     private void saveToUndoStack() {
         if (undoStack.size() == MAX_HISTORY) {
             // Remove oldest element
