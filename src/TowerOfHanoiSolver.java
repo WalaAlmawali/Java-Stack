@@ -3,7 +3,14 @@ import java.util.Stack;
 public class TowerOfHanoiSolver {
     public static void main(String[] args){
 
+        int n = 3;
+        initializePegs(n);
+        solveHanoi(n,'A','B','C');
 
+        int expectedMoved =(int)Math.pow(2,n)-1;
+
+        System.out.println("\nTotal Moves Made: " + moveCount);
+        System.out.println("Theoretical Minimum Moves: " + expectedMoved);
 
     }
     // Three stacks representing pegs A, B, C
