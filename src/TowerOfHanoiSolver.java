@@ -82,6 +82,9 @@ public class TowerOfHanoiSolver {
         // Move largest disk
         moveDisk(from, to);
 
+        // Move n-1 disks from auxiliary to target
+        solveHanoi(n - 1, aux, to, from);
+
 
     }
 
