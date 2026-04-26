@@ -18,8 +18,17 @@ public class PostfixEvaluator {
         for(String element:expressionElements ){
 
 
+            }
+
+
         }
 
+    // Helper method to check if token is a number
+    private static boolean isNumber(String token) {
+        return token.matches("-?\\d+"); // supports negative numbers
     }
 
-    }
+
+}
+
+
