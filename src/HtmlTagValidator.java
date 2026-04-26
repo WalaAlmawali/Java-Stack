@@ -58,6 +58,8 @@ public class HtmlTagValidator {
                     openingTagsStack.push(tagName);
                     System.out.println("Opening tag: <" + tagName + "> pushed to stack");
                 }
+                // Show stack after each step
+                System.out.println("Stack: " + openingTagsStack);
 
 
             }
