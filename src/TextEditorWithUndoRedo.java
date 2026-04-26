@@ -16,6 +16,12 @@ public class TextEditorWithUndoRedo {
     // Store current text as a simple String
     private String currentText = "";
 
+    // Method to type/add text
+    public void type(String text) {
+
+
+    }
+
 
 
 }
