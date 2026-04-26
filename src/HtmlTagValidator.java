@@ -11,6 +11,12 @@ public class HtmlTagValidator {
         // Stack to store opening tags
         Stack<String> openingTagsStack = new Stack<>();
 
+        if (html == null || html.isEmpty()) {
+            System.out.println("Empty string → Valid");
+            return true;
+        }
+
+
 
     }
 
