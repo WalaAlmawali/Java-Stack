@@ -57,6 +57,9 @@ public class StringReversalAndPalindrome {
     }
     public static boolean isPalindromeAdvanced(String str){
 
+        if (str == null) {
+            return false;
+        }
 
 
     }
