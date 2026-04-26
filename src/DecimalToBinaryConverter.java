@@ -72,6 +72,10 @@ public class DecimalToBinaryConverter {
         for(int i = binary.length()-1; i>= 0; i--){
 
             char bit = binary.charAt(i);
+            if(bit == '1'){
+                decimal+= Math.pow(2,power);
+            }
+
 
         }
 
