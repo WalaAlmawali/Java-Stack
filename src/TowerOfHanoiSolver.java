@@ -53,6 +53,17 @@ public class TowerOfHanoiSolver {
             System.out.println("Invalid move attempted from " + fromPeg + " to " + toPeg);
             return;
         }
+        Stack<Integer> from = getPeg(fromPeg);
+        Stack<Integer> to = getPeg(toPeg);
+
+        int disk = from.pop();
+        to.push(disk);
+
+        moveCount++;
+
+        System.out.println("Peg A: " + pegA);
+        System.out.println("Peg B: " + pegB);
+        System.out.println("Peg C: " + pegC);
 
 
     }
