@@ -13,6 +13,8 @@ public class PostfixEvaluator {
 
         Stack<Integer> stack = new Stack<>();
 
+        String[] expressionElements = expression.split("");
+
 
     }
 
