@@ -30,6 +30,8 @@ public class PostfixEvaluator {
                 int b = stack.pop(); // pop()
                 int a = stack.pop(); // pop()
 
+                int result = applyOperator(a, b, element);
+
 
             }
 
