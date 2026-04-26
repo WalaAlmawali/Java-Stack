@@ -30,7 +30,15 @@ public class TextEditorWithUndoRedo {
 
         // Clear redo stack after new action
         redoStack.clear();
+        System.out.println("Current Text: \"" + currentText + "\"");
+        System.out.println("Undo Stack: " + undoStack);
+        System.out.println("Redo Stack: " + redoStack);
 
+
+    }
+
+    // Method to undo last action
+    public void undo() {
 
 
     }
