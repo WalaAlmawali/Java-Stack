@@ -16,10 +16,22 @@ public class TextEditorWithUndoRedo {
     // Store current text as a simple String
     private String currentText = "";
 
+    private static final int MAX_HISTORY = 10;
+
+
     // Method to type/add text
     public void type(String text) {
 
 
+    }
+
+    // Save state to undo stack with size limit
+    private void saveToUndoStack() {
+        if (undoStack.size() == MAX_HISTORY) {
+            // Remove oldest element
+            undoStack.remove(0);
+        }
+        undoStack.push(currentText);
     }
 
 
