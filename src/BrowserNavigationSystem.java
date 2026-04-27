@@ -72,5 +72,8 @@ public class BrowserNavigationSystem {
             System.out.println("Cannot go forward, no forward history.");
             return;
         }
+        // Push current page to back stack
+        backStack.push(currentPage);
+
     }
 }
