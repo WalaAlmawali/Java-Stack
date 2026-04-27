@@ -21,6 +21,9 @@ public class BrowserNavigationSystem {
 
     public void visitPage(String url) {
 
+        if (currentPage != null) {
+            // Push current page to back stack
+            backStack.push(currentPage);
 
 
     }
