@@ -34,6 +34,9 @@ public class BrowserNavigationSystem {
         // Set new current page
         currentPage = url;
 
+        // Clear forward stack (new navigation resets forward history)
+        forwardStack.clear();
+
 
     }
 }
