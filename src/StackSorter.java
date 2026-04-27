@@ -37,6 +37,11 @@ public class StackSorter {
     }
     //Helper function
     public static void insertInSortedOrder(Stack<Integer> stack, int value) {
+        if (stack.isEmpty() || stack.peek() <= value) {
+            stack.push(value);
+
+        }
+
 
     }
 }
