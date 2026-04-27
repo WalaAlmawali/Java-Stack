@@ -5,4 +5,6 @@ public class InfixToPostfixConverter {
 
     }
 
+    Stack<Character> operatorsStack = new Stack<>();
+
     }
