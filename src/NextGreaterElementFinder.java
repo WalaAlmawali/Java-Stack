@@ -44,6 +44,7 @@ public class NextGreaterElementFinder {
         int[] result = new int[n];
 
         Stack<Integer> stack = new Stack<>();
+        Arrays.fill(result, -1);
 
 
     }
