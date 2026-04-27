@@ -35,7 +35,10 @@ public class QueueUsingTwoStacks {
 
     }
     public T peek() {
-
+        if (isEmpty()) {
+            System.out.println("Queue is empty! Cannot peek.");
+            return null;
+        }
 
     }
 
