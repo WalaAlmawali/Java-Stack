@@ -124,6 +124,7 @@ public class InfixToPostfixConverter {
     }
     // Evaluate postfix expression
     public static double evaluatePostfix(String postfix) {
+        Stack<Double> stack = new Stack<>();
 
 
     }
