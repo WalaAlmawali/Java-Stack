@@ -5,8 +5,13 @@ public class StackSorter {
 
 
     }
-    Stack<Integer> original = new Stack<>();
+
     Stack<Integer> Temp = new Stack<>();
+
+    public static Stack<Integer> sortStack(Stack<Integer> original){
+
+
+    }
 
 
 }
