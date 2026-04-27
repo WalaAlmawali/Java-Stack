@@ -46,6 +46,10 @@ public class BrowserNavigationSystem {
     }
     public void goBack() {
 
+        if (backStack.isEmpty()) {
+            System.out.println("Cannot go back, no history.");
+            return;
+        }
 
     }
 }
