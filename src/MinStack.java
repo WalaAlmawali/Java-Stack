@@ -38,6 +38,11 @@ public class MinStack {
         return mainStack.peek();
     }
 
+    public int getMin(){
+
+
+    }
+
 
 
 }
