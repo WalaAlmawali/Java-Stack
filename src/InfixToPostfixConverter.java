@@ -16,6 +16,12 @@ public class InfixToPostfixConverter {
         infix = infix.replaceAll("\\s+", "");
         System.out.println("\nConverting: " + infix);
 
+        for (int i = 0; i < infix.length(); i++) {
+
+
+        }
+
+
 
     }
 
