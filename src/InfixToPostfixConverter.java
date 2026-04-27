@@ -12,6 +12,23 @@ public class InfixToPostfixConverter {
         return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '%' || ch == '^';
     }
 
+    // Get operator precedence
+    public static int getPrecedence(char op) {
+        switch (op) {
+            case '^':
+                return 3;
+            case '*':
+            case '/':
+            case '%':
+                return 2;
+            case '+':
+            case '-':
+                return 1;
+            default:
+                return -1;
+        }
+    }
+
     public static String infixToPostfix(String infix) {
 
         Stack<Character> stack = new Stack<>();
