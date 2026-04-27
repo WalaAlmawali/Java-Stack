@@ -133,6 +133,13 @@ public class InfixToPostfixConverter {
                 stack.push(Double.parseDouble(token));
             }
 
+            // If operator
+            else if (token.length() == 1 && isOperator(token.charAt(0))) {
+                if (stack.size() < 2)
+                    throw new RuntimeException("Invalid postfix expression");
+
+            }
+
         }
 
 
