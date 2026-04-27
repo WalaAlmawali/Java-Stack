@@ -7,6 +7,25 @@ public class BrowserNavigationSystem {
 
         BrowserNavigationSystem browser = new BrowserNavigationSystem();
 
+        browser.visitPage("google.com");
+        browser.visitPage("youtube.com");
+        browser.visitPage("github.com");
+        browser.visitPage("stackoverflow.com");
+
+        browser.goBack();
+        browser.goBack();
+
+        browser.goForward();
+
+        browser.visitPage("linkedin.com");
+
+        browser.goBack();
+        browser.goForward();
+
+        browser.visitPage("twitter.com");
+        browser.visitPage("facebook.com");
+
+
 
 
     }
