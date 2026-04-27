@@ -7,4 +7,10 @@ public class InfixToPostfixConverter {
 
     Stack<Character> operatorsStack = new Stack<>();
 
+    public static String infixToPostfix(String infix) {
+
+
+
+    }
+
     }
