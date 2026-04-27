@@ -40,6 +40,8 @@ public class NextGreaterElementFinder {
     // Find Next Greater Element in Circular Array
     public static int[] findNextGreaterElementCircular(int[] arr) {
 
+        int n = arr.length;
+        int[] result = new int[n];
 
     }
 
