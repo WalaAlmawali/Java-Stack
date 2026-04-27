@@ -18,6 +18,10 @@ public class QueueUsingTwoStacks {
     public void enqueue(T element) {
         inputStack.push(element);
         System.out.println("Enqueued: " + element);
+        System.out.println("Input Stack: " + inputStack);
+        System.out.println("Output Stack: " + outputStack);
+        System.out.println("Queue Size: " + size());
+        System.out.println("Logical Queue: " + getQueueOrder());
 
     }
     public boolean isEmpty() {
@@ -31,6 +35,10 @@ public class QueueUsingTwoStacks {
         }
         T removed = outputStack.pop();
         System.out.println("Dequeued: " + removed);
+        System.out.println("Input Stack: " + inputStack);
+        System.out.println("Output Stack: " + outputStack);
+        System.out.println("Queue Size: " + size());
+        System.out.println("Logical Queue: " + getQueueOrder());
 
         return removed;
 
@@ -42,6 +50,10 @@ public class QueueUsingTwoStacks {
         }
         T front = outputStack.peek();
         System.out.println("Front Element: " + front);
+        System.out.println("Input Stack: " + inputStack);
+        System.out.println("Output Stack: " + outputStack);
+        System.out.println("Queue Size: " + size());
+        System.out.println("Logical Queue: " + getQueueOrder());
         return front;
 
 
