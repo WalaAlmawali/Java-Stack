@@ -89,4 +89,10 @@ public class BrowserNavigationSystem {
     public void showCurrentPage() {
         System.out.println("Current Page: " + currentPage);
     }
+
+    public void showHistory() {
+        System.out.println("Back Stack: " + backStack);
+        System.out.println("Forward Stack: " + forwardStack);
+    }
+
 }
