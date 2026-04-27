@@ -19,6 +19,12 @@ public class InfixToPostfixConverter {
         for (int i = 0; i < infix.length(); i++) {
             char ch = infix.charAt(i);
 
+            // Handle numbers (multi-digit & decimal)
+            if(Character.isDigit(ch) || ch == '.'){
+
+
+            }
+
 
         }
 
