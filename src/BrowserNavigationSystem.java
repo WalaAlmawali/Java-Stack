@@ -15,4 +15,7 @@ public class BrowserNavigationSystem {
     // Variable to store current page
     private String currentPage = null;
 
+    // Maximum limit for back history
+    private final int MAX_HISTORY = 10;
+
 }
