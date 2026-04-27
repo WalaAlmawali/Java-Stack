@@ -21,6 +21,15 @@ public class NextGreaterElementFinder {
         for (int i = 0; i < n; i++) {
             System.out.println("\nProcessing index " + i + " value " + arr[i]);
 
+            // While current element is greater than stack top
+            while (!stack.isEmpty() && arr[i] > arr[stack.peek()]) {
+                int index = stack.pop();
+                result[index] = arr[i];
+
+                System.out.println("  Pop index " + index +
+                        " → Next Greater = " + arr[i]);
+            }
+
         }
 
 
