@@ -75,5 +75,7 @@ public class BrowserNavigationSystem {
         // Push current page to back stack
         backStack.push(currentPage);
 
+        currentPage = forwardStack.pop();
+
     }
 }
