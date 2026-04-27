@@ -88,7 +88,10 @@ return result;
 
     // Display results in table format
     public static void displayResults(int[] arr, int[] result) {
-
+        System.out.println("\nIndex\tValue\tNext");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + "\t" + arr[i] + "\t" + result[i]);
+        }
 
     }
 
