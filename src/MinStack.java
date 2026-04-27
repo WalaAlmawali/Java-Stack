@@ -39,8 +39,11 @@ public class MinStack {
     }
 
     public int getMin(){
+        if(minStack.isEmpty()){
+            throw new RuntimeException("Stack is empty!");
+        }
 
-
+        return minStack.peek();
     }
 
 
