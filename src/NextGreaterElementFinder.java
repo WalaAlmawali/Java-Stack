@@ -51,6 +51,9 @@ public class NextGreaterElementFinder {
         for (int i = 0; i < 2 * n; i++) {
             int index = i % n;
 
+            while (!stack.isEmpty() && arr[index] > arr[stack.peek()]) {
+                result[stack.pop()] = arr[index];
+            }
 
 
         }
