@@ -67,7 +67,8 @@ return result;
 
     // Find Next Smaller Element
     public static int[] findNextSmallerElement(int[] arr) {
-
+        int n = arr.length;
+        int[] result = new int[n];
 
     }
 
