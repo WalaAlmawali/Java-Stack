@@ -17,6 +17,7 @@ public class InfixToPostfixConverter {
         System.out.println("\nConverting: " + infix);
 
         for (int i = 0; i < infix.length(); i++) {
+            char ch = infix.charAt(i);
 
 
         }
