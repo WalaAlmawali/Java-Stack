@@ -37,5 +37,10 @@ public class NextGreaterElementFinder {
         return result;
 
     }
+    // Find Next Greater Element in Circular Array
+    public static int[] findNextGreaterElementCircular(int[] arr) {
+
+
+    }
 
     }
