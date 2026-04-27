@@ -30,6 +30,10 @@ public class MinStack {
 
 
     }
+    public int peek(){
+
+
+    }
 
 
 
