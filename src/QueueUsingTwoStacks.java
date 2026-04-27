@@ -39,6 +39,7 @@ public class QueueUsingTwoStacks {
             System.out.println("Queue is empty! Cannot peek.");
             return null;
         }
+        T front = outputStack.peek();
 
     }
 
