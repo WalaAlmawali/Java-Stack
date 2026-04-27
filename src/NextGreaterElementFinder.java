@@ -45,8 +45,14 @@ public class NextGreaterElementFinder {
 
         Stack<Integer> stack = new Stack<>();
         Arrays.fill(result, -1);
+        System.out.println("\n--- Circular Next Greater Element ---");
+
+        // Traverse twice for circular effect
+        for (int i = 0; i < 2 * n; i++) {
+            int index = i % n;
 
 
-    }
+
+        }
 
     }
