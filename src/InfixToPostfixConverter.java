@@ -86,7 +86,24 @@ public class InfixToPostfixConverter {
                     throw new RuntimeException("Mismatched parentheses");
                 }
         }
+            // Operator
+            else if (isOperator(ch)) {
 
+                // Handle unary minus
+                if (ch == '-' && (i == 0 || infix.charAt(i - 1) == '(')) {
+                    postfix += "0 ";
+                }
+
+                while (!stack.isEmpty() &&
+                        getPrecedence(stack.peek()) >= getPrecedence(ch)) {
+                    postfix += stack.pop() + " ";
+                }
+                stack.push(ch);
+            }
+
+            else {
+                throw new RuntimeException("Invalid character: " + ch);
+            }
 
 
 
