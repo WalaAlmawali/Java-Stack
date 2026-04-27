@@ -37,6 +37,11 @@ public class BrowserNavigationSystem {
         // Clear forward stack (new navigation resets forward history)
         forwardStack.clear();
 
+        System.out.println("Visited: " + url);
+        System.out.println("Current Page: " + currentPage);
+        System.out.println("Back Stack: " + backStack);
+        System.out.println("Forward Stack: " + forwardStack);
+
 
     }
 }
