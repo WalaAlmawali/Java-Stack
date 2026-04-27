@@ -15,6 +15,10 @@ public class QueueUsingTwoStacks {
     // Stack for dequeue operations
     private Stack<T> outputStack = new Stack<>();
 
+    public void enqueue(T element) {
+
+
+    }
 
 
     }
