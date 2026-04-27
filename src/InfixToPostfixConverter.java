@@ -22,6 +22,11 @@ public class InfixToPostfixConverter {
             // Handle numbers (multi-digit & decimal)
             if(Character.isDigit(ch) || ch == '.'){
 
+                while (i < infix.length() &&
+                        (Character.isDigit(infix.charAt(i)) || infix.charAt(i) == '.')) {
+                    postfix += infix.charAt(i);
+                    i++;
+                }
 
             }
 
