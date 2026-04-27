@@ -24,6 +24,9 @@ public class MinStack {
             System.out.println("Stack is empty!");
         }
         int removed = mainStack.pop();
+        if(removed == minStack.peek()){
+            minStack.pop();
+        }
 
 
     }
