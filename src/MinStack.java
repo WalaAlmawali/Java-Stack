@@ -20,6 +20,9 @@ public class MinStack {
 
     public void pop(){
 
+        if(minStack.isEmpty()){
+            System.out.println("Stack is empty!");
+        }
 
     }
 
