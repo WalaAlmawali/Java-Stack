@@ -6,5 +6,8 @@ public class BrowserNavigationSystem {
 
 
     }
+    // Stack to store back history
+    private Stack<String> backStack = new Stack<>();
 
-    }
+
+}
