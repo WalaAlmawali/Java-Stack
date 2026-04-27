@@ -2,6 +2,9 @@ import java.util.Stack;
 public class InfixToPostfixConverter {
     public static void main(String[] args) {
 
+        String postfix = infixToPostfix( "3 + 4 * 2");
+
+       System.out.println(evaluatePostfix(postfix));
 
     }
 
@@ -137,16 +140,20 @@ public class InfixToPostfixConverter {
             else if (token.length() == 1 && isOperator(token.charAt(0))) {
                 if (stack.size() < 2)
                     throw new RuntimeException("Invalid postfix expression");
+
+
+                double b = stack.pop();
+                double a = stack.pop();
+
+                double result = applyOperation(a, b, token.charAt(0));
+                stack.push(result);
+
             }
-            double b = stack.pop();
-            double a = stack.pop();
-
-            double result = applyOperation(a, b, token.charAt(0));
-            stack.push(result);
-
         }
 
 
+
+            return  stack.pop();
     }
 
 }
