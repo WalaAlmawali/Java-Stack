@@ -6,5 +6,7 @@ public class StackSorter {
 
     }
     Stack<Integer> original = new Stack<>();
+    Stack<Integer> Temp = new Stack<>();
 
-    }
+
+}
