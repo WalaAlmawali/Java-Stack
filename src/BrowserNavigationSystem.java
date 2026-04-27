@@ -18,4 +18,12 @@ public class BrowserNavigationSystem {
     // Maximum limit for back history
     private final int MAX_HISTORY = 10;
 
+
+    public void visitPage(String url) {
+
+
+
+    }
+
+
 }
