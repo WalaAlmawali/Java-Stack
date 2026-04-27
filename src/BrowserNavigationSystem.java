@@ -12,4 +12,7 @@ public class BrowserNavigationSystem {
     // Stack to store forward history
     private Stack<String> forwardStack = new Stack<>();
 
+    // Variable to store current page
+    private String currentPage = null;
+
 }
