@@ -112,5 +112,21 @@ public class InfixToPostfixConverter {
                     " | Postfix: " + postfix);
         }
 
+        // Pop remaining operators
+        while (!stack.isEmpty()) {
+            if (stack.peek() == '(')
+                throw new RuntimeException("Mismatched parentheses");
+
+            postfix += stack.pop() + " ";
+        }
+
+        return postfix.trim();
     }
+    // Evaluate postfix expression
+    public static double evaluatePostfix(String postfix) {
+
+
+    }
+
 }
+
