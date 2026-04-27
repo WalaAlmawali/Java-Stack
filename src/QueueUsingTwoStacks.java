@@ -1,9 +1,11 @@
 import java.util.Stack;
-import java.util.LinkedList;
-import java.util.Queue;
 
-public class QueueUsingTwoStacks {
+public class QueueUsingTwoStacks<T> {
     public static void main(String[] args) {
+
+        QueueUsingTwoStacks<Integer> queue = new QueueUsingTwoStacks<>();
+
+        queue.enqueue(10);
 
 
 
@@ -77,6 +79,13 @@ public class QueueUsingTwoStacks {
         }
 
         return result.trim();
+    }
+    private void shiftStacksIfNeeded() {
+        if (outputStack.isEmpty()) {
+            while (!inputStack.isEmpty()) {
+                outputStack.push(inputStack.pop());
+            }
+        }
     }
 
 
