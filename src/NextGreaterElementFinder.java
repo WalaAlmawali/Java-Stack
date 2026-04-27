@@ -64,4 +64,11 @@ public class NextGreaterElementFinder {
         }
 return result;
     }
-}
+
+    // Find Next Smaller Element
+    public static int[] findNextSmallerElement(int[] arr) {
+
+
+    }
+
+    }
