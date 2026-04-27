@@ -77,5 +77,11 @@ public class BrowserNavigationSystem {
 
         currentPage = forwardStack.pop();
 
+        System.out.println("Went Forward");
+        System.out.println("Went Back");
+        System.out.println("Current Page: " + currentPage);
+        System.out.println("Back Stack: " + backStack);
+        System.out.println("Forward Stack: " + forwardStack);
+
     }
 }
