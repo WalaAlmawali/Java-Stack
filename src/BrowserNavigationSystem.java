@@ -64,4 +64,9 @@ public class BrowserNavigationSystem {
 
 
     }
+
+    // Navigate forward
+    public void goForward() {
+
+    }
 }
