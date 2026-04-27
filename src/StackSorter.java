@@ -7,8 +7,21 @@ public class StackSorter {
         s1.push(4);
         s1.push(2);
 
-        System.out.println(sortStack(s1));
-        sortStackRecursive(s1);
+        System.out.println("Befor sorting : ");
+        displayStack(s1,"Stak1");
+        System.out.println("After sorting : ");
+        Stack <Integer>sorted1 =sortStack(s1);
+        displayStack(sorted1,"sorted Stack");
+
+        Stack<Integer> s2 = new Stack<>();
+        s2.push(3);
+        s2.push(1);
+        s2.push(4);
+        s2.push(2);
+        System.out.println("Befor sorting : ");
+        displayStack(s2,"Stak2");
+        sortStackRecursive(s2);
+        displayStack(s2, "Sorted Stack (Recursive)");
 
 
 
@@ -41,6 +54,7 @@ public class StackSorter {
     public static void insertInSortedOrder(Stack<Integer> stack, int value) {
         if (stack.isEmpty() || stack.peek() <= value) {
             stack.push(value);
+            return;
 
         }
         int temp = stack.pop();
