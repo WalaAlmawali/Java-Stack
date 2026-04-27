@@ -14,6 +14,7 @@ public class InfixToPostfixConverter {
 
         // Remove spaces
         infix = infix.replaceAll("\\s+", "");
+        System.out.println("\nConverting: " + infix);
 
 
     }
