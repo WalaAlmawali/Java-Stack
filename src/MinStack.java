@@ -23,6 +23,8 @@ public class MinStack {
         if(minStack.isEmpty()){
             System.out.println("Stack is empty!");
         }
+        int removed = mainStack.pop();
+
 
     }
 
