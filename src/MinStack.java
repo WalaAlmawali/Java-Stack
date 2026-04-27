@@ -4,6 +4,15 @@ public class MinStack {
 
         MinStack stack= new MinStack();
 
+        stack.push(8);
+        stack.push(3);
+        stack.push(6);
+        stack.push(2);
+        stack.pop();
+        System.out.println(stack.peek());
+        System.out.println(stack.getMin());
+
+
 
     }
     Stack<Integer> mainStack = new Stack<>();
@@ -16,6 +25,7 @@ public class MinStack {
         if (minStack.isEmpty() || value<= minStack.peek()){
             minStack.push(value);
         }
+        display();
 
     }
 
@@ -28,6 +38,7 @@ public class MinStack {
         if(removed == minStack.peek()){
             minStack.pop();
         }
+        display();
 
 
     }
