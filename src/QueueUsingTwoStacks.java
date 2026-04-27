@@ -50,6 +50,22 @@ public class QueueUsingTwoStacks {
     public int size() {
         return inputStack.size() + outputStack.size();
     }
+    // Build logical queue order (for display)
+    private String getQueueOrder() {
+        String result = "";
+
+        // Output stack (reverse order)
+        for (int i = outputStack.size() - 1; i >= 0; i--) {
+            result += outputStack.get(i) + " ";
+        }
+
+        // Input stack (normal order)
+        for (int i = 0; i < inputStack.size(); i++) {
+            result += inputStack.get(i) + " ";
+        }
+
+        return result.trim();
+    }
 
 
     }
