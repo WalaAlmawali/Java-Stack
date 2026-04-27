@@ -17,6 +17,7 @@ public class QueueUsingTwoStacks {
 
     public void enqueue(T element) {
         inputStack.push(element);
+        System.out.println("Enqueued: " + element);
 
     }
     public boolean isEmpty() {
@@ -40,7 +41,14 @@ public class QueueUsingTwoStacks {
             return null;
         }
         T front = outputStack.peek();
+        System.out.println("Front Element: " + front);
+        return front;
 
+
+    }
+    // Get size
+    public int size() {
+        return inputStack.size() + outputStack.size();
     }
 
 
