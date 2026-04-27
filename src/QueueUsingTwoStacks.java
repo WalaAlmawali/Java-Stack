@@ -16,7 +16,8 @@ public class QueueUsingTwoStacks {
     private Stack<T> outputStack = new Stack<>();
 
     public void enqueue(T element) {
-
+        inputStack.push(element);
+        System.out.println("Enqueued: " + element);
 
     }
 
