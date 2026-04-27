@@ -35,7 +35,10 @@ public class InfixToPostfixConverter {
             else if (ch == '(') {
                 stack.push(ch);
             }
-
+            else if (ch == ')') {
+                while (!stack.isEmpty() && stack.peek() != '(') {
+                    postfix += stack.pop() + " ";
+                }
         }
 
 
