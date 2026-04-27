@@ -1,4 +1,6 @@
 import java.util.Stack;
+import java.util.ArrayList;
+
 
 public class BrowserNavigationSystem {
     public static void main(String[] args) {
@@ -17,6 +19,9 @@ public class BrowserNavigationSystem {
 
     // Maximum limit for back history
     private final int MAX_HISTORY = 10;
+
+    // List to store all visited pages in the session
+    private ArrayList<String> sessionHistory = new ArrayList<>();
 
 
     public void visitPage(String url) {
@@ -93,6 +98,11 @@ public class BrowserNavigationSystem {
     public void showHistory() {
         System.out.println("Back Stack: " + backStack);
         System.out.println("Forward Stack: " + forwardStack);
+    }
+
+    // Show full session history
+    public void showSessionHistory() {
+        System.out.println("Session History: " + sessionHistory);
     }
 
 }
