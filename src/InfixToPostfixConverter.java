@@ -12,6 +12,9 @@ public class InfixToPostfixConverter {
         Stack<Character> stack = new Stack<>();
         String postfix = "";
 
+        // Remove spaces
+        infix = infix.replaceAll("\\s+", "");
+
 
     }
 
