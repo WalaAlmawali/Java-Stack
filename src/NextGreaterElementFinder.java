@@ -6,6 +6,7 @@ public class NextGreaterElementFinder {
 
 
     }
+
     // Find Next Greater Element (O(n) using stack)
     public static int[] findNextGreaterElement(int[] arr) {
 
@@ -37,6 +38,7 @@ public class NextGreaterElementFinder {
         return result;
 
     }
+
     // Find Next Greater Element in Circular Array
     public static int[] findNextGreaterElementCircular(int[] arr) {
 
@@ -54,8 +56,12 @@ public class NextGreaterElementFinder {
             while (!stack.isEmpty() && arr[index] > arr[stack.peek()]) {
                 result[stack.pop()] = arr[index];
             }
+            if (i < n) {
+                stack.push(index);
+            }
 
 
         }
-
+return result;
     }
+}
