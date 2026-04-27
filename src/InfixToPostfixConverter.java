@@ -33,14 +33,19 @@ public class InfixToPostfixConverter {
     // Apply arithmetic operation
     public static double applyOperation(double a, double b, char op) {
         switch (op) {
-            case '+': return a + b;
-            case '-': return a - b;
-            case '*': return a * b;
+            case '+':
+                return a + b;
+            case '-':
+                return a - b;
+            case '*':
+                return a * b;
             case '/':
                 if (b == 0) throw new ArithmeticException("Division by zero");
                 return a / b;
-            case '%': return a % b;
-            case '^': return Math.pow(a, b);
+            case '%':
+                return a % b;
+            case '^':
+                return Math.pow(a, b);
         }
         return 0;
     }
@@ -51,7 +56,6 @@ public class InfixToPostfixConverter {
         String postfix = "";
 
 
-
         // Remove spaces
         infix = infix.replaceAll("\\s+", "");
         System.out.println("\nConverting: " + infix);
@@ -60,7 +64,7 @@ public class InfixToPostfixConverter {
             char ch = infix.charAt(i);
 
             // Handle numbers (multi-digit & decimal)
-            if(Character.isDigit(ch) || ch == '.'){
+            if (Character.isDigit(ch) || ch == '.') {
 
                 while (i < infix.length() &&
                         (Character.isDigit(infix.charAt(i)) || infix.charAt(i) == '.')) {
@@ -85,7 +89,7 @@ public class InfixToPostfixConverter {
                 } else {
                     throw new RuntimeException("Mismatched parentheses");
                 }
-        }
+            }
             // Operator
             else if (isOperator(ch)) {
 
@@ -99,15 +103,14 @@ public class InfixToPostfixConverter {
                     postfix += stack.pop() + " ";
                 }
                 stack.push(ch);
-            }
-
-            else {
+            } else {
                 throw new RuntimeException("Invalid character: " + ch);
             }
-
-
-
+            // Show step
+            System.out.println("Token: " + ch +
+                    " | Stack: " + stack +
+                    " | Postfix: " + postfix);
+        }
 
     }
-
-    }
+}
