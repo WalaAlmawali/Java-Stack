@@ -6,12 +6,17 @@ public class StackSorter {
 
     }
 
-    Stack<Integer> Temp = new Stack<>();
 
     public static Stack<Integer> sortStack(Stack<Integer> stack){
+        Stack<Integer> tempStack = new Stack<>();
 
         while (!stack.isEmpty()){
             int current = stack.pop();
+
+            while(!tempStack.isEmpty() && tempStack.peek()< current){
+
+                stack.push(tempStack.pop());
+            }
 
         }
 
