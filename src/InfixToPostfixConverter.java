@@ -29,6 +29,22 @@ public class InfixToPostfixConverter {
         }
     }
 
+
+    // Apply arithmetic operation
+    public static double applyOperation(double a, double b, char op) {
+        switch (op) {
+            case '+': return a + b;
+            case '-': return a - b;
+            case '*': return a * b;
+            case '/':
+                if (b == 0) throw new ArithmeticException("Division by zero");
+                return a / b;
+            case '%': return a % b;
+            case '^': return Math.pow(a, b);
+        }
+        return 0;
+    }
+
     public static String infixToPostfix(String infix) {
 
         Stack<Character> stack = new Stack<>();
