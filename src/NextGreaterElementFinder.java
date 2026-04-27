@@ -4,5 +4,10 @@ public class NextGreaterElementFinder {
 
 
     }
+    // Find Next Greater Element (O(n) using stack)
+    public static int[] findNextGreaterElement(int[] arr) {
+
+
+    }
 
     }
