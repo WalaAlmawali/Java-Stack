@@ -35,6 +35,10 @@ public class StackSorter {
 
 
     }
+    //Helper function
+    public static void insertInSortedOrder(Stack<Integer> stack, int value) {
+
+    }
 }
 
 
