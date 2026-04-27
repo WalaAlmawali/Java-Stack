@@ -75,7 +75,9 @@ return result;
         System.out.println("\n--- Finding Next Smaller Element ---");
 
         for (int i = 0; i < n; i++) {
-
+            while (!stack.isEmpty() && arr[i] < arr[stack.peek()]) {
+                result[stack.pop()] = arr[i];
+            }
 
         }
 
