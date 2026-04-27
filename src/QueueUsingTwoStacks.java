@@ -19,6 +19,9 @@ public class QueueUsingTwoStacks {
         inputStack.push(element);
 
     }
+    public boolean isEmpty() {
+        return inputStack.isEmpty() && outputStack.isEmpty();
+    }
 
     public T dequeue() {
 
