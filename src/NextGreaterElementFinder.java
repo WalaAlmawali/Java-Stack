@@ -29,11 +29,12 @@ public class NextGreaterElementFinder {
                 System.out.println("  Pop index " + index +
                         " → Next Greater = " + arr[i]);
             }
+            // Push current index
+            stack.push(i);
+            System.out.println("  Push index " + i + " → Stack: " + stack);
 
         }
-
-
-
+        return result;
 
     }
 
