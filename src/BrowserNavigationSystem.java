@@ -68,5 +68,9 @@ public class BrowserNavigationSystem {
     // Navigate forward
     public void goForward() {
 
+        if (forwardStack.isEmpty()) {
+            System.out.println("Cannot go forward, no forward history.");
+            return;
+        }
     }
 }
