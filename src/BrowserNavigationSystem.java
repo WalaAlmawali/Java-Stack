@@ -25,6 +25,10 @@ public class BrowserNavigationSystem {
             // Push current page to back stack
             backStack.push(currentPage);
 
+            // Maintain maximum history size
+            if (backStack.size() > MAX_HISTORY) {
+                backStack.remove(0); // Remove oldest page
+            }
 
     }
 
