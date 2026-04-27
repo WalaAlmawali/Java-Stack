@@ -51,5 +51,8 @@ public class BrowserNavigationSystem {
             return;
         }
 
+        // Push current page to forward stack
+        forwardStack.push(currentPage);
+
     }
 }
