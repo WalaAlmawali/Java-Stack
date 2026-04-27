@@ -18,6 +18,11 @@ public class MinStack {
 
     }
 
+    public void pop(){
+
+
+    }
+
 
 
 }
