@@ -48,6 +48,9 @@ public class MinStack {
 
     public void display(){
 
+        System.out.println("Main Stack : " + mainStack);
+        System.out.println("Min Stack : " + minStack);
+
 
     }
 
