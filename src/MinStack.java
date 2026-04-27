@@ -2,6 +2,7 @@ import java.util.Stack;
 public class MinStack {
     public static void main(String[] args) {
 
+        MinStack stack= new MinStack();
 
 
     }
@@ -50,7 +51,6 @@ public class MinStack {
 
         System.out.println("Main Stack : " + mainStack);
         System.out.println("Min Stack : " + minStack);
-
 
     }
 
