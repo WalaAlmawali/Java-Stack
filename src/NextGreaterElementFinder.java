@@ -72,6 +72,13 @@ return result;
         Stack<Integer> stack = new Stack<>();
 
         Arrays.fill(result, -1);
+        System.out.println("\n--- Finding Next Smaller Element ---");
+
+        for (int i = 0; i < n; i++) {
+
+
+        }
+
 
     }
 
