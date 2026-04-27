@@ -35,9 +35,15 @@ public class InfixToPostfixConverter {
             else if (ch == '(') {
                 stack.push(ch);
             }
+            // Closing parenthesis
             else if (ch == ')') {
                 while (!stack.isEmpty() && stack.peek() != '(') {
                     postfix += stack.pop() + " ";
+                }
+                if (!stack.isEmpty() && stack.peek() == '(') {
+                    stack.pop();
+                } else {
+                    throw new RuntimeException("Mismatched parentheses");
                 }
         }
 
