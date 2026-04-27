@@ -28,8 +28,13 @@ public class InfixToPostfixConverter {
                     i++;
                 }
 
+                postfix += " ";
+                i--;
             }
-
+            // Opening parenthesis
+            else if (ch == '(') {
+                stack.push(ch);
+            }
 
         }
 
