@@ -69,6 +69,7 @@ return result;
     public static int[] findNextSmallerElement(int[] arr) {
         int n = arr.length;
         int[] result = new int[n];
+        Stack<Integer> stack = new Stack<>();
 
     }
 
