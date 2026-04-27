@@ -137,8 +137,9 @@ public class InfixToPostfixConverter {
             else if (token.length() == 1 && isOperator(token.charAt(0))) {
                 if (stack.size() < 2)
                     throw new RuntimeException("Invalid postfix expression");
-
             }
+            double b = stack.pop();
+            double a = stack.pop();
 
         }
 
