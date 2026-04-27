@@ -8,8 +8,12 @@ public class StackSorter {
 
     Stack<Integer> Temp = new Stack<>();
 
-    public static Stack<Integer> sortStack(Stack<Integer> original){
+    public static Stack<Integer> sortStack(Stack<Integer> stack){
 
+        while (!stack.isEmpty()){
+            int current = stack.pop();
+
+        }
 
     }
 
