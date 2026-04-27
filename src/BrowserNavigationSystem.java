@@ -44,4 +44,8 @@ public class BrowserNavigationSystem {
 
 
     }
+    public void goBack() {
+
+
+    }
 }
