@@ -128,6 +128,10 @@ public class InfixToPostfixConverter {
         String[] tokens = postfix.split(" ");
 
         for (String token : tokens) {
+            // If number
+            if (token.matches("-?\\d+(\\.\\d+)?")) {
+                stack.push(Double.parseDouble(token));
+            }
 
         }
 
