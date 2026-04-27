@@ -12,7 +12,6 @@ public class StackSorter {
 
     }
 
-
     public static Stack<Integer> sortStack(Stack<Integer> stack) {
         Stack<Integer> tempStack = new Stack<>();
 
@@ -28,6 +27,9 @@ public class StackSorter {
         }
 
         return tempStack;
+    }
+    public static void sortStackRecursive(Stack<Integer> stack) {
+
     }
 }
 
