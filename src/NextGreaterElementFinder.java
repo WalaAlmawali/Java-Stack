@@ -16,6 +16,13 @@ public class NextGreaterElementFinder {
 
         // Initialize result with -1
         Arrays.fill(result, -1);
+        System.out.println("\n--- Finding Next Greater Element ---");
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("\nProcessing index " + i + " value " + arr[i]);
+
+        }
+
 
 
 
