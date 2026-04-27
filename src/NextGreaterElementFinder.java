@@ -10,6 +10,9 @@ public class NextGreaterElementFinder {
         int n = arr.length;
         int[] result = new int[n];
 
+        Stack<Integer> stack = new Stack<>(); // store indices
+
+
 
     }
 
