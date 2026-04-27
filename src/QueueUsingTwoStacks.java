@@ -7,6 +7,12 @@ public class QueueUsingTwoStacks {
 
     }
 
+    // Stack for enqueue operations
+    private Stack<T> inputStack = new Stack<>();
+
+    // Stack for dequeue operations
+    private Stack<T> outputStack = new Stack<>();
+
 
 
     }
