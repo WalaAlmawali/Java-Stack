@@ -1,11 +1,11 @@
 import java.util.Stack;
 
 public class BrowserNavigationSystem {
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
 
 
     }
+
     // Stack to store back history
     private Stack<String> backStack = new Stack<>();
 
@@ -30,7 +30,10 @@ public class BrowserNavigationSystem {
                 backStack.remove(0); // Remove oldest page
             }
 
+        }
+        // Set new current page
+        currentPage = url;
+
+
     }
-
-
 }
