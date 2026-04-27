@@ -46,6 +46,11 @@ public class MinStack {
         return minStack.peek();
     }
 
+    public void display(){
+
+
+    }
+
 
 
 }
