@@ -6,6 +6,13 @@ public class QueueUsingTwoStacks<T> {
         QueueUsingTwoStacks<Integer> queue = new QueueUsingTwoStacks<>();
 
         queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.peek();
+        queue.dequeue();
+        queue.enqueue(40);
+        queue.enqueue(50);
+
 
 
 
@@ -35,6 +42,7 @@ public class QueueUsingTwoStacks<T> {
             System.out.println("Queue is empty! Cannot dequeue.");
             return null;
         }
+        shiftStacksIfNeeded();
         T removed = outputStack.pop();
         System.out.println("Dequeued: " + removed);
         System.out.println("Input Stack: " + inputStack);
@@ -50,6 +58,7 @@ public class QueueUsingTwoStacks<T> {
             System.out.println("Queue is empty! Cannot peek.");
             return null;
         }
+        shiftStacksIfNeeded();
         T front = outputStack.peek();
         System.out.println("Front Element: " + front);
         System.out.println("Input Stack: " + inputStack);
