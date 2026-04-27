@@ -7,6 +7,9 @@ public class NextGreaterElementFinder {
     // Find Next Greater Element (O(n) using stack)
     public static int[] findNextGreaterElement(int[] arr) {
 
+        int n = arr.length;
+        int[] result = new int[n];
+
 
     }
 
