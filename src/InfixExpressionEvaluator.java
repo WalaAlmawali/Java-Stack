@@ -11,6 +11,7 @@ public class InfixExpressionEvaluator {
         Stack<Character> operatorStack = new Stack<>();
 
 
+        int i = 0;
 
     }
 
