@@ -61,9 +61,9 @@ public class InfixExpressionEvaluator {
 
             operandStack.push(applyOperation(a,b,op));
 
-
         }
 
+        return operandStack.pop();
     }
     // Check if character is number or decimal
     public static boolean isNumber(char ch) {
