@@ -52,6 +52,7 @@ public class InfixExpressionEvaluator {
             }
 
             printStacks(operandStack,operatorStack);
+            i++;
         }
 
     }
