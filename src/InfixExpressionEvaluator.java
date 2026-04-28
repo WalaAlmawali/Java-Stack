@@ -82,6 +82,7 @@ public static int getPrecedence(char operator) {
         case '%': return 2;
         case '^': return 3;
     }
+    return -1;
 }
 
 
