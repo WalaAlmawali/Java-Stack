@@ -55,8 +55,12 @@ public class InfixExpressionEvaluator {
         System.out.println("Operators: " + operatorStack);
 
     }
+    public static double applyOperation(double a, double b, char operator) {
 
-}
+    }
+
+
+    }
 
 
 
