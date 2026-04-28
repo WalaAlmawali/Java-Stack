@@ -34,6 +34,9 @@ public class InfixExpressionEvaluator {
                 operatorStack.push(ch);
             } else if (ch==')') {
                 while(!operatorStack.isEmpty() && operatorStack.peek()!='('){
+                    double a = operandStack.pop();
+                    double b = operandStack.pop();
+
 
                 }
             }
