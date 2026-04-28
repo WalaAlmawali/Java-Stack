@@ -51,6 +51,7 @@ public class InfixExpressionEvaluator {
                 operatorStack.push(ch);
             }
 
+            printStacks(operandStack,operatorStack);
         }
 
     }
