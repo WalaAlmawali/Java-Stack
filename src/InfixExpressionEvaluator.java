@@ -23,8 +23,7 @@ public class InfixExpressionEvaluator {
     }
     // Check if character is number or decimal
     public static boolean isNumber(char ch) {
-
-
+        return Character.isDigit(ch) || ch == '.';
     }
 
 }
