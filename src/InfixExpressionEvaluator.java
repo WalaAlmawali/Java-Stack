@@ -26,6 +26,7 @@ public class InfixExpressionEvaluator {
                     i++;
                 }
                 double value = Double.parseDouble(str);
+                operandStack.push(value);
 
             }
 
