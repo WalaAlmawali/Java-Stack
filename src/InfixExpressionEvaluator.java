@@ -72,6 +72,11 @@ public class InfixExpressionEvaluator {
 
 
     }
+// Get operator precedence
+public static int getPrecedence(char operator) {
+
+
+}
 
 
 
