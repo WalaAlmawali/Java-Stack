@@ -59,6 +59,8 @@ public class InfixExpressionEvaluator {
             double b = operandStack.pop();
             char op = operatorStack.pop();
 
+            operandStack.push(applyOperation(a,b,op));
+
 
         }
 
