@@ -13,7 +13,10 @@ public class InfixExpressionEvaluator {
         while (i< expression.length()){
             char ch = expression.charAt(i);
 
-
+            if(ch ==''){
+                i++;
+                continue;
+            }
 
         }
 
