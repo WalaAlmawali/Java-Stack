@@ -23,6 +23,7 @@ public class InfixExpressionEvaluator {
                 while(i<expression.length() && (isNumber(expression.charAt(i)))){
 
                     str += expression.charAt(i);
+                    i++;
                 }
 
             }
