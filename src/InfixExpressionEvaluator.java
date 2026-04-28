@@ -20,6 +20,9 @@ public class InfixExpressionEvaluator {
 
             if(isNumber(ch)){
                 String str ="";
+                while(i<expression.length() && (isNumber(expression.charAt(i)))){
+
+                }
 
             }
 
