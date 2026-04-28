@@ -33,7 +33,9 @@ public class InfixExpressionEvaluator {
             if(ch == '('){
                 operatorStack.push(ch);
             } else if (ch==')') {
-                
+                while(!operatorStack.isEmpty() && operatorStack.peek()!='('){
+
+                }
             }
 
         }
