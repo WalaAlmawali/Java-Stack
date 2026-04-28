@@ -39,7 +39,8 @@ public class InfixExpressionEvaluator {
     }
     // Print stack contents
     private static void printStacks(Stack<Double> operands, Stack<Character> operators, char token) {
-
+        System.out.println("Operands: " + operands);
+        System.out.println("Operators: " + operators);
 
     }
 
