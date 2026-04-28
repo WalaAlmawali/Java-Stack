@@ -27,6 +27,8 @@ public class InfixExpressionEvaluator {
                 }
                 double value = Double.parseDouble(str);
                 operandStack.push(value);
+                printStacks(operandStack,operatorStack);
+                continue;;
 
             }
 
