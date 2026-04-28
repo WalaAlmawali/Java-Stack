@@ -32,6 +32,8 @@ public class InfixExpressionEvaluator {
             }
             if(ch == '('){
                 operatorStack.push(ch);
+            } else if (ch==')') {
+                
             }
 
         }
