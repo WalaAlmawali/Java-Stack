@@ -55,8 +55,18 @@ public class InfixExpressionEvaluator {
         System.out.println("Operators: " + operatorStack);
 
     }
+    // Apply arithmetic operation
     public static double applyOperation(double a, double b, char operator) {
-
+        switch (operator) {
+            case '+': return a + b;
+            case '-': return a - b;
+            case '*': return a * b;
+            case '/':
+                if (b == 0) throw new ArithmeticException("Division by zero");
+                return a / b;
+            case '%': return a % b;
+            case '^': return Math.pow(a, b);
+        }
     }
 
 
