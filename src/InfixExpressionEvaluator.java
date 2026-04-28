@@ -67,6 +67,7 @@ public class InfixExpressionEvaluator {
             case '%': return a % b;
             case '^': return Math.pow(a, b);
         }
+        return 0;
     }
 
 
