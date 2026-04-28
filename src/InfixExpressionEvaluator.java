@@ -9,9 +9,11 @@ public class InfixExpressionEvaluator {
 
         Stack<Double> operandStack = new Stack<>();
         Stack<Character> operatorStack = new Stack<>();
-
-
         int i = 0;
+        while (i< expression.length()){
+
+
+        }
 
     }
 
