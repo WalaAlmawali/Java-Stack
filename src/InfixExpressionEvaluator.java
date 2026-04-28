@@ -54,6 +54,10 @@ public class InfixExpressionEvaluator {
             printStacks(operandStack,operatorStack);
             i++;
         }
+        while (!operatorStack.isEmpty()){
+
+
+        }
 
     }
     // Check if character is number or decimal
