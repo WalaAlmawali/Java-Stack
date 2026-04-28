@@ -42,7 +42,8 @@ public class InfixExpressionEvaluator {
                 operatorStack.pop();
             } else if (isOperator(ch)) {
                 while (!operatorStack.isEmpty() && getPrecedence(operatorStack.peek())>= getPrecedence(ch)){
-
+                    double a = operandStack.pop();
+                    double b = operandStack.pop();
 
                 }
             }
