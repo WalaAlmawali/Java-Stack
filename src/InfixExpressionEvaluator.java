@@ -74,8 +74,14 @@ public class InfixExpressionEvaluator {
     }
 // Get operator precedence
 public static int getPrecedence(char operator) {
-
-
+    switch (operator) {
+        case '+':
+        case '-': return 1;
+        case '*':
+        case '/':
+        case '%': return 2;
+        case '^': return 3;
+    }
 }
 
 
