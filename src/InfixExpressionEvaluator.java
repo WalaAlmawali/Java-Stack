@@ -11,6 +11,8 @@ public class InfixExpressionEvaluator {
         Stack<Character> operatorStack = new Stack<>();
         int i = 0;
         while (i< expression.length()){
+            char ch = expression.charAt(i);
+
 
 
         }
