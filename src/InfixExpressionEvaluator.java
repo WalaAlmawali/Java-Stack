@@ -37,6 +37,11 @@ public class InfixExpressionEvaluator {
     public static boolean isNumber(char ch) {
         return Character.isDigit(ch) || ch == '.';
     }
+    // Print stack contents
+    private static void printStacks(Stack<Double> operands, Stack<Character> operators, char token) {
+
+
+    }
 
 }
 
