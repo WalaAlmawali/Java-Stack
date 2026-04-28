@@ -8,6 +8,8 @@ public class InfixExpressionEvaluator {
     public static double evaluate(String expression) {
 
         Stack<Double> operandStack = new Stack<>();
+        Stack<Character> operatorStack = new Stack<>();
+
 
 
     }
