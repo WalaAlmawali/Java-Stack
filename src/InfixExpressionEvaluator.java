@@ -55,7 +55,8 @@ public class InfixExpressionEvaluator {
             i++;
         }
         while (!operatorStack.isEmpty()){
-
+            double a = operandStack.pop();
+            double b = operandStack.pop();
 
         }
 
