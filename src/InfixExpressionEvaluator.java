@@ -29,7 +29,9 @@ public class InfixExpressionEvaluator {
                 operandStack.push(value);
                 printStacks(operandStack,operatorStack);
                 continue;;
-
+            }
+            if(ch == '('){
+                operatorStack.push(ch);
             }
 
         }
