@@ -40,6 +40,8 @@ public class InfixExpressionEvaluator {
                     operandStack.push(applyOperation(a,b,op));
                 }
                 operatorStack.pop();
+            } else if (isOperator(ch)) {
+                
             }
 
         }
