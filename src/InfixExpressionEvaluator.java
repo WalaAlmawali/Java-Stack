@@ -47,8 +47,8 @@ public class InfixExpressionEvaluator {
                     char op = operatorStack.pop();
                     operandStack.push(applyOperation(a,b,op));
 
-
                 }
+                operatorStack.push(ch);
             }
 
         }
