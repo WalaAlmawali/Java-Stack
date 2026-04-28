@@ -84,6 +84,11 @@ public static int getPrecedence(char operator) {
     }
     return -1;
 }
+// Check if character is operator
+public static boolean isOperator(char ch) {
+
+
+}
 
 
 
