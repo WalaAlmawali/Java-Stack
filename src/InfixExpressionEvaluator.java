@@ -18,6 +18,11 @@ public class InfixExpressionEvaluator {
                 continue;
             }
 
+            if(isNumber(ch)){
+
+
+            }
+
         }
 
     }
