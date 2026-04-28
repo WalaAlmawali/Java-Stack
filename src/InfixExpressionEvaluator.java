@@ -38,9 +38,9 @@ public class InfixExpressionEvaluator {
         return Character.isDigit(ch) || ch == '.';
     }
     // Print stack contents
-    private static void printStacks(Stack<Double> operands, Stack<Character> operators, char token) {
-        System.out.println("Operands: " + operands);
-        System.out.println("Operators: " + operators);
+    private static void printStacks(Stack<Double> operandStack, Stack<Character> operatorStack) {
+        System.out.println("Operands: " + operandStack);
+        System.out.println("Operators: " + operatorStack);
 
     }
 
