@@ -3,6 +3,7 @@ public class LargestRectangleInHistogram {
     public static void main(String[] args) {
         int[] arr = {2, 1, 5, 6, 2, 3};
         System.out.println(findLargestRectangle(arr));
+        displayHistogram(arr);
 
     }
 
