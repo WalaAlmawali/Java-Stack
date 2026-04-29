@@ -73,11 +73,10 @@ public class LargestRectangleInHistogram {
         for(int i = max; i> 0; i--){
 
             for(int h : heights){
-
-            }
-
+                if(h >= i) System.out.print("*");
+                else System.out.print("");
         }
-
+            System.out.println();
 
     }
 
