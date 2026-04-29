@@ -95,4 +95,9 @@ public class LargestRectangleInHistogram {
 
     }
 
+    public static int maximalRectangle(int[][] matrix) {
+
+
+    }
+
 }
