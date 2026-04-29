@@ -103,6 +103,9 @@ public class LargestRectangleInHistogram {
 
         for (int[] row : matrix) {
 
+            for (int i = 0; i < row.length; i++) {
+                heights[i] = (row[i] == 0) ? 0 : heights[i] + 1;
+            }
 
         }
 
