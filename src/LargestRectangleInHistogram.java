@@ -96,7 +96,7 @@ public class LargestRectangleInHistogram {
     }
 
     public static int maximalRectangle(int[][] matrix) {
-
+        if (matrix.length == 0) return 0;
 
     }
 
