@@ -65,6 +65,10 @@ public class LargestRectangleInHistogram {
         return heights * width ;
 
     }
+    public static void displayHistogram(int[] heights){
+
+
+    }
 
 
 
