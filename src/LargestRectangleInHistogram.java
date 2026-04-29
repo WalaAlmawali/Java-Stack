@@ -11,6 +11,8 @@ public class LargestRectangleInHistogram {
         }
          Stack<Integer> indicesOfHistogram = new Stack<>();
 
+        int maxArea = 0;
+
     }
 
 
