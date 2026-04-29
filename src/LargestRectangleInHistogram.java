@@ -72,6 +72,9 @@ public class LargestRectangleInHistogram {
 
         for(int i = max; i> 0; i--){
 
+            for(int h : heights){
+
+            }
 
         }
 
