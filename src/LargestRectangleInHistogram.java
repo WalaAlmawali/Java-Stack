@@ -29,6 +29,9 @@ public class LargestRectangleInHistogram {
                 }else{
                     width = i - indicesOfHistogram.peek() - 1;
                 }
+
+                int area = calculateArea(height,width);
+
             }
 
         }
