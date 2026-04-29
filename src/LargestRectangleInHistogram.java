@@ -2,7 +2,6 @@ import java.util.Stack;
 public class LargestRectangleInHistogram {
     public static void main(String[] args) {
 
-
     }
     public static int findLargestRectangle(int[] heights){
 
@@ -35,6 +34,10 @@ public class LargestRectangleInHistogram {
                 maxArea = Math.max(maxArea,area);
 
             }
+        }
+
+        while (!indicesOfHistogram.isEmpty()){
+
 
         }
 
