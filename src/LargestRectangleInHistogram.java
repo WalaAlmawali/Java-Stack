@@ -1,6 +1,8 @@
 import java.util.Stack;
 public class LargestRectangleInHistogram {
     public static void main(String[] args) {
+        int [] arr = {2,1,5,6,2,3};
+        System.out.println(findLargestRectangle(arr));
 
     }
     public static int findLargestRectangle(int[] heights){
@@ -14,7 +16,12 @@ public class LargestRectangleInHistogram {
         int i = 0;
         while(i< heights.length){
 
-            if(heights[i]>= heights[indicesOfHistogram.peek()] || indicesOfHistogram.isEmpty()){
+            if(indicesOfHistogram.isEmpty()){
+                indicesOfHistogram.push(i);
+                i++;
+            }
+
+            if(heights[i]>= heights[indicesOfHistogram.peek()]){
                 indicesOfHistogram.push(i);
                 i++;
 
