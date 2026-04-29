@@ -91,7 +91,7 @@ public class LargestRectangleInHistogram {
 
     }
     public static void displayResult(int[] heights, int maxArea) {
-
+        System.out.println("Max Rectangle Area (Stack O(n)): " + maxArea);
 
     }
 
