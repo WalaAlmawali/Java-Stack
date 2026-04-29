@@ -26,6 +26,8 @@ public class LargestRectangleInHistogram {
 
                 if(indicesOfHistogram.isEmpty()){
                     width = i;
+                }else{
+                    width = i - indicesOfHistogram.peek() - 1;
                 }
             }
 
