@@ -15,6 +15,10 @@ public class LargestRectangleInHistogram {
         int i = 0;
         while(i< heights.length){
 
+            if(heights[i]>= heights[indicesOfHistogram.peek()] || indicesOfHistogram.isEmpty()){
+
+
+            }
 
         }
 
