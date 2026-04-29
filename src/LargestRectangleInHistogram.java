@@ -25,6 +25,10 @@ public class LargestRectangleInHistogram {
 
     }
 
+    public static int calculateArea(int heights, int width){
+
+    }
+
 
 
     }
