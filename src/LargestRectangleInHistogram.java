@@ -19,6 +19,8 @@ public class LargestRectangleInHistogram {
                 indicesOfHistogram.push(i);
                 i++;
 
+            }else{
+                int top = indicesOfHistogram.pop();
             }
 
         }
@@ -26,7 +28,7 @@ public class LargestRectangleInHistogram {
     }
 
     public static int calculateArea(int heights, int width){
-        return heights *width ;
+        return heights * width ;
 
     }
 
