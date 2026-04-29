@@ -70,6 +70,11 @@ public class LargestRectangleInHistogram {
         int max = 0;
         for (int h: heights)  max = Math.max(max,h);
 
+        for(int i = max; i> 0; i--){
+
+
+        }
+
 
     }
 
