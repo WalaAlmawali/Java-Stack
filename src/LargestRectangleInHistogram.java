@@ -21,6 +21,8 @@ public class LargestRectangleInHistogram {
 
             }else{
                 int top = indicesOfHistogram.pop();
+                int height = heights[top];
+                int width;
             }
 
         }
