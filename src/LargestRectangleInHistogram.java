@@ -51,6 +51,7 @@ public class LargestRectangleInHistogram {
             maxArea = Math.max(maxArea,area);
         }
 
+        return maxArea;
     }
 
     public static int calculateArea(int heights, int width){
