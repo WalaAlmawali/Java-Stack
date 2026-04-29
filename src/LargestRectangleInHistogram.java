@@ -13,6 +13,10 @@ public class LargestRectangleInHistogram {
 
         int maxArea = 0;
         int i = 0;
+        while(i< heights.length){
+
+
+        }
 
     }
 
