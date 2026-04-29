@@ -108,6 +108,7 @@ public class LargestRectangleInHistogram {
             }
             maxArea = Math.max(maxArea, findLargestRectangle(heights));
         }
+        return maxArea;
 
     }
 
