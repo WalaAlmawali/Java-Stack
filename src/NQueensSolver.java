@@ -60,11 +60,94 @@ public class NQueensSolver {
             int row = 0, col = 0;
             int solutions = 0;
 
+            while (true) {
+                boolean placed = false;
+
+                while (col < n) {
+                    Position pos = new Position(row, col);
+
+                    if (isSafe(pos, stack)) {
+                        stack.push(pos);
+
+                        if (showSteps) {
+                            System.out.println("Placed: " + pos);
+                            System.out.println("Stack: " + stack);
+                            displayBoard(stack, n);
+                        }
+
+                        row++;
+                        col = 0;
+                        placed = true;
+                        break;
+                    } else {
+                        col++;
+                    }
+                }
 
         }
+            while (true) {
+                boolean placed = false;
 
+                while (col < n) {
+                    Position pos = new Position(row, col);
 
-        public static void main(String[] args) {
+                    if (isSafe(pos, stack)) {
+                        stack.push(pos);
 
+                        if (showSteps) {
+                            System.out.println("Placed: " + pos);
+                            System.out.println("Stack: " + stack);
+                            displayBoard(stack, n);
+                        }
+
+                        row++;
+                        col = 0;
+                        placed = true;
+                        break;
+                    } else {
+                        col++;
+                    }
+                }
+
+                // If placed all queens
+                if (row == n) {
+                    solutions++;
+                    System.out.println("✅ Solution #" + solutions + ": " + stack);
+
+                    displayBoard(stack, n);
+
+                    // Backtrack
+                    Position last = stack.pop();
+                    row--;
+                    col = last.col + 1;
+                }
+
+                // If no position found → backtrack
+                if (!placed) {
+                    if (stack.isEmpty()) break;
+
+                    Position last = stack.pop();
+
+                    if (showSteps) {
+                        System.out.println("Backtracking from: " + last);
+                    }
+
+                    row--;
+                    col = last.col + 1;
+                }
+            }
+
+            return solutions;
+        }
 
         }
+        public static int solveRecursive(int n) {
+            return solveRecHelper(n, 0, new Stack<>());
+        }
+        private static int solveRecHelper(int n, int row, Stack<Position> queens) {
+            if (row == n) {
+                return 1;
+            }
+
+
+
