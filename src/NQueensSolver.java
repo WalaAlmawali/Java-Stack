@@ -26,7 +26,7 @@ public class NQueensSolver {
    }
     // DISPLAY BOARD
     public static void displayBoard(Stack<Position> queens, int n) {
-
+        char[][] board = new char[n][n];
 
 
 
