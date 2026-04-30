@@ -33,10 +33,26 @@ public class NQueensSolver {
             Arrays.fill(board[i], '.');
         }
 
+        // Print board with coordinates
+        System.out.println("\nBoard:");
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(i + " | ");
+            for (int j = 0; j < n; j++) {
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.print("    ");
+        for (int j = 0; j < n; j++) {
+            System.out.print(j + " ");
+        }
+        System.out.println("\n");
+    }
 
     }
 
-}
+
         public static void main(String[] args) {
 
 
