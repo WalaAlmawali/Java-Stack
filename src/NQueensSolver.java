@@ -28,6 +28,10 @@ public class NQueensSolver {
     public static void displayBoard(Stack<Position> queens, int n) {
         char[][] board = new char[n][n];
 
+        // Fill board
+        for (int i = 0; i < n; i++) {
+            Arrays.fill(board[i], '.');
+        }
 
 
     }
