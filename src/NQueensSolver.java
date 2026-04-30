@@ -1,6 +1,6 @@
 import java.util.Stack;
 // Class to represent a queen's position
-class Position {
+static class Position {
     int row, col;
 
     public Position(int row, int col) {
@@ -66,13 +66,13 @@ public class NQueensSolver {
                 while (col < n) {
                     Position pos = new Position(row, col);
 
-                    if (isSafe(pos, stack)) {
+                    if (NQueensSolver.isSafe(pos, stack)) {
                         stack.push(pos);
 
                         if (showSteps) {
                             System.out.println("Placed: " + pos);
                             System.out.println("Stack: " + stack);
-                            displayBoard(stack, n);
+                            NQueensSolver.displayBoard(stack, n);
                         }
 
                         row++;
@@ -91,13 +91,13 @@ public class NQueensSolver {
                 while (col < n) {
                     Position pos = new Position(row, col);
 
-                    if (isSafe(pos, stack)) {
+                    if (NQueensSolver.isSafe(pos, stack)) {
                         stack.push(pos);
 
                         if (showSteps) {
                             System.out.println("Placed: " + pos);
                             System.out.println("Stack: " + stack);
-                            displayBoard(stack, n);
+                            NQueensSolver.displayBoard(stack, n);
                         }
 
                         row++;
@@ -114,7 +114,7 @@ public class NQueensSolver {
                     solutions++;
                     System.out.println("✅ Solution #" + solutions + ": " + stack);
 
-                    displayBoard(stack, n);
+                    NQueensSolver.displayBoard(stack, n);
 
                     // Backtrack
                     Position last = stack.pop();
@@ -148,6 +148,40 @@ public class NQueensSolver {
             if (row == n) {
                 return 1;
             }
+            int count = 0;
+
+            for (int col = 0; col < n; col++) {
+                Position pos = new Position(row, col);
+
+                if (NQueensSolver.isSafe(pos, queens)) {
+                    queens.push(pos);
+                    count += solveRecHelper(n, row + 1, queens);
+                    queens.pop(); // backtrack
+                }
+            }
+
+            return count;
+        }
+        // ===========================
+        // DISPLAY ALL SOLUTIONS
+        // ===========================
+        public static void displayAllSolutions(int n) {
+            System.out.println("\nSolving N = " + n);
+
+            long start1 = System.nanoTime();
+            int iterativeSolutions = solveNQueens(n, false);
+            long end1 = System.nanoTime();
+
+            long start2 = System.nanoTime();
+            int recursiveSolutions = solveRecursive(n);
+            long end2 = System.nanoTime();
+
+            System.out.println("Total Solutions (Iterative): " + iterativeSolutions);
+            System.out.println("Total Solutions (Recursive): " + recursiveSolutions);
+
+            System.out.println("Iterative Time: " + (end1 - start1) + " ns");
+            System.out.println("Recursive Time: " + (end2 - start2) + " ns");
+        }
 
 
 
