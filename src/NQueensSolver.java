@@ -14,6 +14,9 @@ public class NQueensSolver {
             this.row = row;
             this.col = col;
         }
+        public String toString(){
+            return "("+row + ","+ col + ")";
+        }
 
     }
 }
