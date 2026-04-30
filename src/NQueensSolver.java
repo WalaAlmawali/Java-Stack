@@ -51,6 +51,10 @@ public class NQueensSolver {
     }
 
     }
+        public static int solveNQueens(int n, boolean showSteps) {
+
+
+        }
 
 
         public static void main(String[] args) {
