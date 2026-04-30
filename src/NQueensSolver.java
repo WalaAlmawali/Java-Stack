@@ -22,10 +22,15 @@ public class NQueensSolver {
            // Same diagonal
            if (Math.abs(q.row - pos.row) == Math.abs(q.col - pos.col)) return false;
        }
-
-
+       return true;
    }
+    // DISPLAY BOARD
+    public static void displayBoard(Stack<Position> queens, int n) {
 
+
+
+
+    }
 
 }
         public static void main(String[] args) {
