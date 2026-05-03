@@ -1,4 +1,6 @@
 import java.util.Stack;
+import java.util.Arrays;
+
 // Class to represent a queen's position
 static class Position {
     int row, col;
@@ -14,6 +16,7 @@ static class Position {
 }
 
 public class NQueensSolver {
+
    static boolean isSafe(Position pos, Stack<Position> queens ){
        for (Position q : queens) {
            // Same column
@@ -84,30 +87,6 @@ public class NQueensSolver {
                     }
                 }
 
-        }
-            while (true) {
-                boolean placed = false;
-
-                while (col < n) {
-                    Position pos = new Position(row, col);
-
-                    if (NQueensSolver.isSafe(pos, stack)) {
-                        stack.push(pos);
-
-                        if (showSteps) {
-                            System.out.println("Placed: " + pos);
-                            System.out.println("Stack: " + stack);
-                            NQueensSolver.displayBoard(stack, n);
-                        }
-
-                        row++;
-                        col = 0;
-                        placed = true;
-                        break;
-                    } else {
-                        col++;
-                    }
-                }
 
                 // If placed all queens
                 if (row == n) {
@@ -135,12 +114,15 @@ public class NQueensSolver {
                     row--;
                     col = last.col + 1;
                 }
+
             }
-
             return solutions;
-        }
 
         }
+
+
+
+
         public static int solveRecursive(int n) {
             return solveRecHelper(n, 0, new Stack<>());
         }
@@ -181,6 +163,24 @@ public class NQueensSolver {
 
             System.out.println("Iterative Time: " + (end1 - start1) + " ns");
             System.out.println("Recursive Time: " + (end2 - start2) + " ns");
+        }
+        public static void main(String[] args) {
+
+            // Edge cases
+            System.out.println("N=0 → " + solveNQueens(0, false));
+            System.out.println("N=1 → " + solveNQueens(1, false));
+            System.out.println("N=2 → " + solveNQueens(2, false));
+            System.out.println("N=3 → " + solveNQueens(3, false));
+
+            // Step-by-step for N=4
+            System.out.println("\n===== STEP-BY-STEP (N=4) =====");
+            solveNQueens(4, true);
+
+            // Solve for required values
+            displayAllSolutions(4);
+            displayAllSolutions(5);
+            displayAllSolutions(6);
+            displayAllSolutions(8);
         }
 
 
